@@ -1,0 +1,1637 @@
+<t name="Pricing" t-name="website.lts-yr">
+        <t t-call="website.layout">
+            <div id="wrap" class="">
+                <div class="oe_structure">
+                    <section class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="1" data-name="العنوان">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 0;"/>
+                        <div class="o_we_bg_filter bg-black-50"/>
+                        <div class="container">
+                            <h3><strong>&amp;nbsp;خطط تسعير مرنة تناسب كل مرحلة من رحلتك</strong></h3>
+                <div class="mb-4"><p class="lead"><em>"اختر الخطة التي تُناسب حجم عملك اليوم وتنمو معك غدًا"</em>
+
+</p>
+            </div>
+            
+                        </div>
+                    </section>
+                </div>
+                <div class="oe_structure"><section class="s_embed_code pt64 o_colored_level text-center pb48" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><div dir="rtl">
+  <style>
+    .calculator {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 20px auto;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      color: #002366;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #00CC99;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #00CC99;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #00b386;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #002366;
+      font-weight: bold;
+    }
+  </style>
+
+  <div class="calculator">
+    <h3 style="color: #002366; text-align: center;">RoundCalls Cost Calculator</h3>
+    
+    <div class="input-group">
+      <label>Monthly Calls</label>
+      <input type="number" id="calls" placeholder="Enter number of calls" min="0"/>
+    </div>
+
+    <div class="input-group">
+      <label>Number of Employees</label>
+      <input type="number" id="employees" placeholder="Enter number of employees" min="1"/>
+    </div>
+
+    <div class="input-group">
+      <label>Required Languages</label>
+      <select id="languages">
+        <option value="1">1 Language</option>
+        <option value="2">2 Languages</option>
+        <option value="3">3 Languages</option>
+        <option value="4">4 Languages</option>
+        <option value="5">5+ Languages</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Language Hourly Rate</label>
+      <input type="number" id="hourlyRate" placeholder="Enter hourly rate for language" value="15" min="0"/>
+    </div>
+
+    <button onclick="calculateCost()">Calculate Cost</button>
+    <div id="result"/>
+  </div>
+
+  <script>
+    function calculateCost() {
+      // New pricing values
+      const baseCalls = 1000; // Base number of calls
+      const basePrice = 199; // Price for the first 1000 calls
+      const callCost = 0.15; // Additional cost per call
+      const employeeCost = 20; // Cost per employee
+      const baseLanguages = 1; // Base languages
+      const languageHourlyRate = parseFloat(document.getElementById('hourlyRate').value) || 15; // Hourly rate for language
+
+      // Get input values
+      const calls = parseInt(document.getElementById('calls').value) || 0;
+      const employees = parseInt(document.getElementById('employees').value) || 1;
+      const languages = parseInt(document.getElementById('languages').value) || 1;
+
+      // Calculate call cost
+      let callTotal = basePrice;
+      if(calls &gt; baseCalls) {
+        callTotal += (calls - baseCalls) * callCost;
+      }
+
+      // Calculate employee cost
+      const employeeTotal = employees * employeeCost;
+
+      // Calculate language cost (hourly rate for each language)
+      const languageTotal = languages &gt; baseLanguages 
+        ? (languages - baseLanguages) * languageHourlyRate * 30 // Assuming 30 hours/month per language
+        : 0;
+
+      // Calculate total cost
+      const total = callTotal + employeeTotal + languageTotal;
+
+      // Display result
+      const resultElement = document.getElementById('result');
+      if(calls &gt;= 0 &amp;&amp; employees &gt;= 1 &amp;&amp; languages &gt;= 1) {
+        resultElement.innerHTML = `
+          Estimated cost: $${total.toFixed(2)} per month 
+          &lt;br&gt;
+          &lt;small style="color: #666; font-size: 14px;"&gt;
+            (${calls} calls + ${employees} employees + ${languages} languages)
+          &lt;/small&gt;
+        `;
+        resultElement.style.color = "#002366";
+      } else {
+        resultElement.innerHTML = "Please enter valid values (calls ≥ 0, employees ≥ 1)";
+        resultElement.style.color = "red";
+      }
+    }
+  </script>
+</div>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><div dir="rtl">
+  <style>
+    .calculator {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 20px auto;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      color: #002366;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #00CC99;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #00CC99;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #00b386;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #002366;
+      font-weight: bold;
+    }
+  </style>
+
+  <div class="calculator">
+    <h3 style="color: #002366; text-align: center;">RoundCalls Cost Calculator</h3>
+    
+    <div class="input-group">
+      <label>Monthly Calls</label>
+      <input type="number" id="calls" placeholder="Enter number of calls" min="0"/>
+    </div>
+
+    <div class="input-group">
+      <label>Number of Employees</label>
+      <input type="number" id="employees" placeholder="Enter number of employees" min="1"/>
+    </div>
+
+    <div class="input-group">
+      <label>Required Languages</label>
+      <select id="languages">
+        <option value="1">1 Language</option>
+        <option value="2">2 Languages</option>
+        <option value="3">3 Languages</option>
+        <option value="4">4 Languages</option>
+        <option value="5">5+ Languages</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Language Hourly Rate</label>
+      <input type="number" id="hourlyRate" placeholder="Enter hourly rate for language" value="15" min="0"/>
+    </div>
+
+    <button onclick="calculateCost()">Calculate Cost</button>
+    <div id="result"/>
+  </div>
+
+  <script>
+    function calculateCost() {
+      // New pricing values
+      const baseCalls = 1000; // Base number of calls
+      const basePrice = 199; // Price for the first 1000 calls
+      const callCost = 0.15; // Additional cost per call
+      const employeeCost = 20; // Cost per employee
+      const baseLanguages = 1; // Base languages
+      const languageHourlyRate = parseFloat(document.getElementById('hourlyRate').value) || 15; // Hourly rate for language
+
+      // Get input values
+      const calls = parseInt(document.getElementById('calls').value) || 0;
+      const employees = parseInt(document.getElementById('employees').value) || 1;
+      const languages = parseInt(document.getElementById('languages').value) || 1;
+
+      // Calculate call cost
+      let callTotal = basePrice;
+      if(calls &gt; baseCalls) {
+        callTotal += (calls - baseCalls) * callCost;
+      }
+
+      // Calculate employee cost
+      const employeeTotal = employees * employeeCost;
+
+      // Calculate language cost (hourly rate for each language)
+      const languageTotal = languages &gt; baseLanguages 
+        ? (languages - baseLanguages) * languageHourlyRate * 30 // Assuming 30 hours/month per language
+        : 0;
+
+      // Calculate total cost
+      const total = callTotal + employeeTotal + languageTotal;
+
+      // Display result
+      const resultElement = document.getElementById('result');
+      if(calls &gt;= 0 &amp;&amp; employees &gt;= 1 &amp;&amp; languages &gt;= 1) {
+        resultElement.innerHTML = `
+          Estimated cost: $${total.toFixed(2)} per month 
+          &lt;br&gt;
+          &lt;small style="color: #666; font-size: 14px;"&gt;
+            (${calls} calls + ${employees} employees + ${languages} languages)
+          &lt;/small&gt;
+        `;
+        resultElement.style.color = "#002366";
+      } else {
+        resultElement.innerHTML = "Please enter valid values (calls ≥ 0, employees ≥ 1)";
+        resultElement.style.color = "red";
+      }
+    }
+  </script>
+</div></div>
+    </section><section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<title>Smart Plan Selector</title>
+<style>
+    :root {
+        --primary-color: #2E7D32;
+        --secondary-color: #81C784;
+        --accent-color: #FFD54F;
+    }
+
+    .oe_website_login_container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 20px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #eee;
+        margin-bottom: 20px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--primary-color);
+        transition: width 0.3s ease;
+    }
+
+    .step-card {
+        display: none;
+        padding: 20px;
+    }
+
+    .step-card.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .company-size-selector {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+
+    .size-option {
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        padding: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .size-option.selected {
+        border-color: var(--primary-color);
+        background: #E8F5E9;
+    }
+
+    .budget-input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        margin: 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .feature-selector {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .feature-checkbox {
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .result-card {
+        background: var(--primary-color);
+        color: white;
+        border-radius: 12px;
+        padding: 2rem;
+    }
+
+    .plan-card {
+        background: #f5f5f5;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .plan-card h3 {
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+    }
+
+    .plan-card .price {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+
+    .plan-card .features {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .plan-card .features li {
+        margin-bottom: 0.5rem;
+    }
+
+    .plan-card .cta {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+<div class="oe_website_login_container">
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: 33%"/>
+    </div>
+
+    <div class="step-card active" data-step="1">
+        <h2>🏢 Choose Your Company Size</h2>
+        <div class="company-size-selector">
+            <div class="size-option" data-size="individual">
+                <h3>Individual/Startup</h3>
+                <p>(1-5 employees)</p>
+            </div>
+            <div class="size-option" data-size="small">
+                <h3>Small</h3>
+                <p>(6-20 employees)</p>
+            </div>
+            <div class="size-option" data-size="medium">
+                <h3>Medium</h3>
+                <p>(21-100 employees)</p>
+            </div>
+            <div class="size-option" data-size="large">
+                <h3>Large</h3>
+                <p>(101-500 employees)</p>
+            </div>
+            <div class="size-option" data-size="enterprise">
+                <h3>Enterprise</h3>
+                <p>(500+ employees)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-card" data-step="2">
+        <h2>💰 Enter Your Monthly Budget ($)</h2>
+        <input type="number" class="budget-input" id="budgetInput" placeholder="e.g., 500"/>
+
+        <h2 style="margin-top: 1.5rem">🎯 Select Required Features</h2>
+        <div class="feature-selector">
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="languages"/> 
+                Multi-language Support
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="ai"/> 
+                Artificial Intelligence
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="support"/> 
+                24/7 Support
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="security"/> 
+                Advanced Security
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="customization"/> 
+                Full Customization
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="analytics"/> 
+                Predictive Analytics
+            </label>
+        </div>
+    </div>
+
+    <div class="step-card" data-step="3">
+        <div class="result-card">
+            <h2>✅ Your Recommended Plan:</h2>
+            <div id="recommendedPlan" style="font-size: 1.8rem; margin: 1rem 0"/>
+            <div id="planPrice" style="font-size: 1.4rem"/>
+            <div id="planFeatures" style="text-align: right; margin-top: 1.5rem"/>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const plans = {
+        basic: {
+            name: "The Seed 🌳",
+            price: 199,
+            features: ["3 core languages (Arabic, English, German)", "500 minutes of calls/month", "Basic chatbot", "Weekly performance reports", "12 hours/day technical support"],
+            suitableFor: ["individual", "small"],
+            required: []
+        },
+        intermediate: {
+            name: "The Tree 🌳🌳",
+            price: 499,
+            features: ["7 languages (including German, Spanish, English)", "2,000 minutes of calls/month", "Task automation + financial forecasting", "Advanced dashboard", "18 hours/day technical support"],
+            suitableFor: ["small", "medium"],
+            required: ["languages"]
+        },
+        advanced: {
+            name: "The Forest 🌳🌳🌳",
+            price: 999,
+            features: ["15 languages with instant translation", "5,000 minutes of calls/month", "Custom AI", "CRM system integration", "24/7 technical support"],
+            suitableFor: ["medium", "large"],
+            required: ["languages", "ai"]
+        },
+        premium: {
+            name: "The Crown 👑",
+            price: 1999,
+            features: ["25 languages with local dialects", "10,000 minutes of calls/month", "Ultra-fast query processing (&lt;5 seconds)", "Predictive analytics based on ML", "Advanced security package (GDPR, ISO 27001)"],
+            suitableFor: ["large", "enterprise"],
+            required: ["languages", "security"]
+        },
+        professional: {
+            name: "The Scepter 🔱",
+            price: 3999,
+            features: ["40+ languages with cultural translation", "Unlimited minutes", "Client-owned AI (White-label)", "Global coverage with local compliance", "Dedicated support team under your brand"],
+            suitableFor: ["enterprise"],
+            required: []
+        },
+        exceptional: {
+            name: "The Throne 🏰",
+            price: "Contact us",
+            features: ["Tailored solutions", "99.99% SLA", "Multi-region management with global infrastructure", "Strategic consultations from top experts", "3 free months with annual subscription"],
+            suitableFor: ["enterprise"],
+            required: ["customization", "security"]
+        }
+    };
+
+    const state = {
+        size: null,
+        budget: null,
+        features: []
+    };
+
+    let timeoutId;
+
+    // Manage steps
+    function showStep(step) {
+        document.querySelectorAll('.step-card').forEach(el =&gt; el.classList.remove('active'));
+        document.querySelector(`[data-step="${step}"]`).classList.add('active');
+        document.querySelector('.progress-fill').style.width = `${(step/3)*100}%`;
+    }
+
+    // Company size selection
+    document.querySelectorAll('.size-option').forEach(option =&gt; {
+        option.addEventListener('click', function() {
+            state.size = this.dataset.size;
+            document.querySelectorAll('.size-option').forEach(el =&gt; el.classList.remove('selected'));
+            this.classList.add('selected');
+            showStep(2);
+        });
+    });
+
+    // Budget input with delay
+    document.getElementById('budgetInput').addEventListener('input', function(e) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() =&gt; {
+            const value = parseInt(e.target.value);
+            if (value &gt; 0) {
+                state.budget = value;
+                showStep(3);
+                calculatePlan();
+            }
+        }, 500);
+    });
+
+    // Feature selection
+    document.querySelectorAll('input[name="features"]').forEach(checkbox =&gt; {
+        checkbox.addEventListener('change', function() {
+            state.features = Array.from(document.querySelectorAll('input[name="features"]:checked'))
+                                .map(el =&gt; el.value);
+            calculatePlan();
+        });
+    });
+
+    // Calculate the best plan
+    function calculatePlan() {
+        if (!state.size || !state.budget) return;
+
+        let bestPlan = plans.basic;
+        let maxScore = 0;
+
+        Object.values(plans).forEach(plan =&gt; {
+            let score = 0;
+            
+            if (plan.suitableFor.includes(state.size)) score += 40;
+            if (typeof plan.price === 'number' &amp;&amp; state.budget &gt;= plan.price) score += 30;
+            score += plan.required.filter(req =&gt; state.features.includes(req)).length * 20;
+
+            if (score &gt; maxScore) {
+                maxScore = score;
+                bestPlan = plan;
+            }
+        });
+
+        // Display the best plan
+        document.getElementById('recommendedPlan').textContent = bestPlan.name;
+        document.getElementById('planPrice').textContent = typeof bestPlan.price === 'number' 
+            ? `Price: $${bestPlan.price}/month` 
+            : bestPlan.price;
+        
+        document.getElementById('planFeatures').innerHTML = `
+            &lt;h3&gt;Features:&lt;/h3&gt;
+            &lt;ul&gt;${bestPlan.features.map(f =&gt; `&lt;li&gt;${f}&lt;/li&gt;`).join('')}&lt;/ul&gt;
+        `;
+    }
+
+    // Initial setup
+    showStep(1);
+});
+</script>
+
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><title>Smart Plan Selector</title><style>
+    :root {
+        --primary-color: #2E7D32;
+        --secondary-color: #81C784;
+        --accent-color: #FFD54F;
+    }
+
+    .oe_website_login_container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 20px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #eee;
+        margin-bottom: 20px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--primary-color);
+        transition: width 0.3s ease;
+    }
+
+    .step-card {
+        display: none;
+        padding: 20px;
+    }
+
+    .step-card.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .company-size-selector {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+
+    .size-option {
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        padding: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .size-option.selected {
+        border-color: var(--primary-color);
+        background: #E8F5E9;
+    }
+
+    .budget-input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        margin: 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .feature-selector {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .feature-checkbox {
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .result-card {
+        background: var(--primary-color);
+        color: white;
+        border-radius: 12px;
+        padding: 2rem;
+    }
+
+    .plan-card {
+        background: #f5f5f5;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .plan-card h3 {
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+    }
+
+    .plan-card .price {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+
+    .plan-card .features {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .plan-card .features li {
+        margin-bottom: 0.5rem;
+    }
+
+    .plan-card .cta {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style><div class="oe_website_login_container">
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: 33%"/>
+    </div>
+
+    <div class="step-card active" data-step="1">
+        <h2>🏢 Choose Your Company Size</h2>
+        <div class="company-size-selector">
+            <div class="size-option" data-size="individual">
+                <h3>Individual/Startup</h3>
+                <p>(1-5 employees)</p>
+            </div>
+            <div class="size-option" data-size="small">
+                <h3>Small</h3>
+                <p>(6-20 employees)</p>
+            </div>
+            <div class="size-option" data-size="medium">
+                <h3>Medium</h3>
+                <p>(21-100 employees)</p>
+            </div>
+            <div class="size-option" data-size="large">
+                <h3>Large</h3>
+                <p>(101-500 employees)</p>
+            </div>
+            <div class="size-option" data-size="enterprise">
+                <h3>Enterprise</h3>
+                <p>(500+ employees)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-card" data-step="2">
+        <h2>💰 Enter Your Monthly Budget ($)</h2>
+        <input type="number" class="budget-input" id="budgetInput" placeholder="e.g., 500"/>
+
+        <h2 style="margin-top: 1.5rem">🎯 Select Required Features</h2>
+        <div class="feature-selector">
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="languages"/> 
+                Multi-language Support
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="ai"/> 
+                Artificial Intelligence
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="support"/> 
+                24/7 Support
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="security"/> 
+                Advanced Security
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="customization"/> 
+                Full Customization
+            </label>
+            <label class="feature-checkbox">
+                <input type="checkbox" name="features" value="analytics"/> 
+                Predictive Analytics
+            </label>
+        </div>
+    </div>
+
+    <div class="step-card" data-step="3">
+        <div class="result-card">
+            <h2>✅ Your Recommended Plan:</h2>
+            <div id="recommendedPlan" style="font-size: 1.8rem; margin: 1rem 0"/>
+            <div id="planPrice" style="font-size: 1.4rem"/>
+            <div id="planFeatures" style="text-align: right; margin-top: 1.5rem"/>
+        </div>
+    </div>
+</div><script>
+document.addEventListener('DOMContentLoaded', function() {
+    const plans = {
+        basic: {
+            name: "The Seed 🌳",
+            price: 199,
+            features: ["3 core languages (Arabic, English, German)", "500 minutes of calls/month", "Basic chatbot", "Weekly performance reports", "12 hours/day technical support"],
+            suitableFor: ["individual", "small"],
+            required: []
+        },
+        intermediate: {
+            name: "The Tree 🌳🌳",
+            price: 499,
+            features: ["7 languages (including German, Spanish, English)", "2,000 minutes of calls/month", "Task automation + financial forecasting", "Advanced dashboard", "18 hours/day technical support"],
+            suitableFor: ["small", "medium"],
+            required: ["languages"]
+        },
+        advanced: {
+            name: "The Forest 🌳🌳🌳",
+            price: 999,
+            features: ["15 languages with instant translation", "5,000 minutes of calls/month", "Custom AI", "CRM system integration", "24/7 technical support"],
+            suitableFor: ["medium", "large"],
+            required: ["languages", "ai"]
+        },
+        premium: {
+            name: "The Crown 👑",
+            price: 1999,
+            features: ["25 languages with local dialects", "10,000 minutes of calls/month", "Ultra-fast query processing (&lt;5 seconds)", "Predictive analytics based on ML", "Advanced security package (GDPR, ISO 27001)"],
+            suitableFor: ["large", "enterprise"],
+            required: ["languages", "security"]
+        },
+        professional: {
+            name: "The Scepter 🔱",
+            price: 3999,
+            features: ["40+ languages with cultural translation", "Unlimited minutes", "Client-owned AI (White-label)", "Global coverage with local compliance", "Dedicated support team under your brand"],
+            suitableFor: ["enterprise"],
+            required: []
+        },
+        exceptional: {
+            name: "The Throne 🏰",
+            price: "Contact us",
+            features: ["Tailored solutions", "99.99% SLA", "Multi-region management with global infrastructure", "Strategic consultations from top experts", "3 free months with annual subscription"],
+            suitableFor: ["enterprise"],
+            required: ["customization", "security"]
+        }
+    };
+
+    const state = {
+        size: null,
+        budget: null,
+        features: []
+    };
+
+    let timeoutId;
+
+    // Manage steps
+    function showStep(step) {
+        document.querySelectorAll('.step-card').forEach(el =&gt; el.classList.remove('active'));
+        document.querySelector(`[data-step="${step}"]`).classList.add('active');
+        document.querySelector('.progress-fill').style.width = `${(step/3)*100}%`;
+    }
+
+    // Company size selection
+    document.querySelectorAll('.size-option').forEach(option =&gt; {
+        option.addEventListener('click', function() {
+            state.size = this.dataset.size;
+            document.querySelectorAll('.size-option').forEach(el =&gt; el.classList.remove('selected'));
+            this.classList.add('selected');
+            showStep(2);
+        });
+    });
+
+    // Budget input with delay
+    document.getElementById('budgetInput').addEventListener('input', function(e) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() =&gt; {
+            const value = parseInt(e.target.value);
+            if (value &gt; 0) {
+                state.budget = value;
+                showStep(3);
+                calculatePlan();
+            }
+        }, 500);
+    });
+
+    // Feature selection
+    document.querySelectorAll('input[name="features"]').forEach(checkbox =&gt; {
+        checkbox.addEventListener('change', function() {
+            state.features = Array.from(document.querySelectorAll('input[name="features"]:checked'))
+                                .map(el =&gt; el.value);
+            calculatePlan();
+        });
+    });
+
+    // Calculate the best plan
+    function calculatePlan() {
+        if (!state.size || !state.budget) return;
+
+        let bestPlan = plans.basic;
+        let maxScore = 0;
+
+        Object.values(plans).forEach(plan =&gt; {
+            let score = 0;
+            
+            if (plan.suitableFor.includes(state.size)) score += 40;
+            if (typeof plan.price === 'number' &amp;&amp; state.budget &gt;= plan.price) score += 30;
+            score += plan.required.filter(req =&gt; state.features.includes(req)).length * 20;
+
+            if (score &gt; maxScore) {
+                maxScore = score;
+                bestPlan = plan;
+            }
+        });
+
+        // Display the best plan
+        document.getElementById('recommendedPlan').textContent = bestPlan.name;
+        document.getElementById('planPrice').textContent = typeof bestPlan.price === 'number' 
+            ? `Price: $${bestPlan.price}/month` 
+            : bestPlan.price;
+        
+        document.getElementById('planFeatures').innerHTML = `
+            &lt;h3&gt;Features:&lt;/h3&gt;
+            &lt;ul&gt;${bestPlan.features.map(f =&gt; `&lt;li&gt;${f}&lt;/li&gt;`).join('')}&lt;/ul&gt;
+        `;
+    }
+
+    // Initial setup
+    showStep(1);
+});
+</script></div>
+    </section><section class="s_comparisons pt48 pb48 o_colored_level" data-vxml="001" data-vcss="001" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/04&quot;,&quot;flip&quot;:[]}" data-snippet="s_comparisons" data-name="المقارنات ">
+        <div class="o_we_shape o_web_editor_Wavy_04 o_header_extra_shape_mapping o_footer_extra_shape_mapping"/>
+        <div class="container">
+            <div class="mb-4">
+                <h3><strong>&amp;nbsp;الخطط القياسية (للبناة الجدد)</strong></h3><p>
+
+</p><p>
+
+</p>
+                <p class="lead"><em/>&amp;nbsp;
+<em>"ابدأ صغيرًا، انمو بذكاء، سيطر على السوق خطوة بخطوة"</em>
+
+</p>
+            </div>
+            <div class="row gap-4 gap-lg-0">
+                <div class="col-lg-4 pt16" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>&amp;nbsp;الخطة الأساسية - "البذرة"
+🌳
+
+</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">$ 199.00</strong> <small class="text-muted">/ الشهر</small></div><p><strong>(للفرق الصغيرة والشركات الناشئة)</strong></p><p>
+
+</p><p>
+
+</p>
+                            <a class="btn btn-outline-primary w-100 mb-3" href="/contactus">ابدأ التجربة المجانية</a>
+                            <ul class="list-group list-group-flush text-start"><p><strong>المميزات</strong>:</p><li class="oe-nested"><ul><li>🌱 3 لغات أساسية (عربي، إنجليزي، الماني)</li><li>📞 500 دقيقة اتصال/شهر</li><li>🤖 روبوت دردشة أساسي</li><li>📊 تقارير أداء أسبوعية</li><li>🕒 دعم فني 12 ساعة/يوم</li></ul></li></ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-center"/>
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong></div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 bg-o-color-1 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>&amp;nbsp;الخطة المتوسطة - "الشجرة"
+🌳
+🌳
+
+
+
+</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">$ 499.00</strong> <small class="text-muted">/ شهريًا</small>
+                            </div>
+                            <p>
+<strong>(للتوسع الإقليمي والفرق المتنامية)</strong></p><a href="/contactus" class="btn w-100 mb-3 btn-secondary">انطلق نحو النمو</a>
+                            <ul class="list-group list-group-flush text-start">
+                                <li><strong>المميزات</strong>:</li><li class="oe-nested"><ul><li>🌿 7 لغات (بما فيها ألماني، إسباني، انجليزي)</li><li>📞 2,000 دقيقة اتصال/شهر</li><li>🤖 أتمتة المهام + تنبؤات مالية</li><li>📈 لوحة تحكم متقدمة</li><li>🕒 دعم فني 18 ساعة/يوم</li></ul></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-center">
+
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong></small></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt16" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 bg-o-color-3 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>&amp;nbsp;الخطة المتقدمة - "الغابة"
+🌳
+
+
+🌳
+
+
+🌳
+
+</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">$ 999.00</strong> <small class="text-muted">/ شهريًا</small>
+                            </div>
+                            <p>
+<strong>(للشركات الراسخة ذات الطموحات الكبيرة)</strong></p><a href="/contactus" class="btn btn-outline-primary w-100 mb-3">سيطر على السوق</a>
+                            <ul class="list-group list-group-flush text-start"><p><strong>المميزات</strong>:</p><li class="oe-nested"><ul><li>🌳 15 لغة مع ترجمة فورية</li><li>📞 5,000 دقيقة اتصال/شهر</li><li>🧠 ذكاء اصطناعي مُخصص</li><li>🌐 تكامل مع أنظمة CRM</li><li>🕒 دعم فني 24/7</li></ul></li>
+                            <br/></ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-center"/>
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_comparisons pt48 pb48 o_colored_level" data-vxml="001" data-vcss="001" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/04&quot;,&quot;flip&quot;:[]}" data-snippet="s_comparisons" data-name="المقارنات ">
+        <div class="o_we_shape o_web_editor_Wavy_04 o_header_extra_shape_mapping o_footer_extra_shape_mapping"/>
+        <div class="container">
+            <div class="mb-4">
+                <h3><strong>&amp;nbsp;الخطط المميزة (للقيادات الرائدة)</strong></h3><p>
+<em>"عندما تكون التميز هو لغتك، والقيادة هي هدفك"</em>
+
+</p><p>
+
+</p>
+            </div>
+            <div class="row gap-4 gap-lg-0">
+                <div class="col-lg-4 pt16" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>المميزة الأساسية - "التاج"
+👑
+
+</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">$ 1,999.00</strong> <small class="text-muted">/ الشهر</small>
+                            </div>
+                            <p><strong>(للعلامات التجارية الطموحة)</strong></p><p>
+
+</p><p>
+
+</p>
+                            <a href="/contactus" class="btn btn-outline-primary w-100 mb-3">ارتق بعلامتك التجارية</a>
+<p><strong>المميزات</strong>:</p><ul><li>👑 25 لغة مع لهجات محلية</li><li>📞 10,000 دقيقة اتصال/شهر</li><li>⚡ معالجة استعلامات فائقة السرعة (&amp;lt;5 ثواني)</li><li>📊 تحليلات تنبؤية مبنية على ML</li><li>🛡️ حزمة أمان متقدمة (GDPR, ISO 27001)</li></ul></div>
+                        <div class="card-footer text-center">
+                            <small class="text-center">
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong><br/>&amp;nbsp;</small></div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 bg-o-color-1 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>المميزة الاحترافية - "الصولجان"
+🔱
+
+</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">$ 3,999.00</strong> <small class="text-muted">/ شهريًا</small>
+                            </div>
+                            <p>
+<strong>(للإمبراطوريات الرقمية)</strong></p><a href="/contactus" class="btn w-100 mb-3 btn-secondary">ابن امبراطوريتك</a>
+<p><strong>المميزات</strong>:</p><ul><li>🔮 40+ لغة مع ترجمة ثقافية</li><li>📞 دقائق غير محدودة</li><li>🤖 ذكاء اصطناعي مملوك للعميل (White-label)</li><li>🌍 تغطية عالمية مع امتثال محلي</li><li>👥 فريق دعم مخصص باسم علامتك</li></ul></div>
+                        <div class="card-footer text-center">
+                            <small class="text-center">
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong></small></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt16" data-name="Plan">
+                    <div class="s_card card o_cc o_cc1 h-100 my-0 bg-o-color-3 o_colored_level" data-vxml="001" data-snippet="s_card" data-name="Card">
+                        <div class="card-body">
+                            <h4><strong>المميزة الاستثنائية - "العرش"</strong></h4><p>
+
+</p>
+                            <div class="my-2">
+                                <strong class="h2-fs">​</strong>&amp;nbsp;
+&amp;nbsp;اتصال للتخصيص
+
+<small class="text-muted">/ شهريًا</small>
+                            </div>
+                            <p>
+<strong>(للملوك الذين يصنعون القواعد)</strong></p><a href="/contactus" class="btn btn-outline-primary w-100 mb-3">اخترع قواعد اللعبة</a><ul class="list-group list-group-flush text-start">
+                                <li><strong>المميزات</strong>:</li><li class="oe-nested"><ul><li>🏰 حلول مُصممة من الصفر حسب احتياجاتك</li><li>⏱️ SLA بنسبة 99.99%</li><li>🌐 إدارة متعددة المناطق ببنية تحتية عالمية</li><li>📈 استشارات استراتيجية من كبار الخبراء</li><li>🎁 3 أشهر مجانية عند الاشتراك السنوي</li></ul></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center"><small class="text-center"/>
+<strong>"إما أن نحقق لك النتائج التي وعدنا بها، أو نعيد لك أموالك مع اعتذار!"</strong>&amp;nbsp;<br/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NeoM Tech - Integrated Solutions</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<style>
+    :root {
+        --primary: #2A5C82;
+        --secondary: #32B4C1;
+        --accent: #FF6B6B;
+        --dark: #1A365D;
+    }
+
+    /* General Styles */
+    body {
+        margin: 0;
+        background: #f8f9fa;
+        font-family: 'Tajawal', sans-serif;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+    }
+
+    .pricing-card {
+        background: white;
+        border-radius: 25px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .plan-comparison {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .plan-tier {
+        padding: 2rem;
+        border-radius: 20px;
+        border: 2px solid var(--primary);
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: rgba(42,92,130,0.05);
+        border-radius: 10px;
+    }
+
+    /* Interactive Comparison Table */
+    .comparison-table {
+        overflow-x: auto;
+        margin: 3rem 0;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        min-width: 800px;
+    }
+
+    th, td {
+        padding: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    thead th {
+        background: var(--primary);
+        color: white;
+        font-size: 1.1rem;
+        position: sticky;
+        left: 0;
+    }
+
+    .pro-badge {
+        background: var(--accent);
+        color: white;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Interactive Effects */
+    .hover-effect {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .hover-effect:hover {
+        background: rgba(50,180,193,0.05);
+        transform: scale(1.02);
+    }
+
+    /* Buttons */
+    .cta-button {
+        background: var(--accent);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+    }
+</style>
+
+<section class="pricing-section">
+    <div class="container">
+        <h2 style="color: var(--dark); text-align: center; margin-bottom: 3rem;">
+            <i class="fas fa-crown"/> Premium Plans Comparison
+        </h2>
+        
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th class="standard-plan">Standard Plans</th>
+                        <th class="premium-plan">Premium Plans</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-globe"/> Supported Languages</td>
+                        <td>15 Core Languages</td>
+                        <td><span class="pro-badge">25+ Languages</span> with Cultural Translation</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-headset"/> Support System</td>
+                        <td>24/7 Support via Core Channels</td>
+                        <td>Dedicated Support Team with Your Brand Name</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-shield"/> Security Standards</td>
+                        <td>Basic Data Encryption</td>
+                        <td>International Security Certificates (ISO 27001, GDPR)</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-paint-brush"/> Customization Options</td>
+                        <td>Limited Interface Adjustments</td>
+                        <td>Fully Customized Design Based on Visual Identity</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-plug"/> System Integrations</td>
+                        <td>5 Core Systems (Salesforce, Zendesk)</td>
+                        <td>Unlimited Integrations + Custom APIs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="plan-comparison">
+            <div class="pricing-card">
+                <div class="plan-tier">
+                    <h3>Standard Plan</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            15 Supported Languages
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            24/7 Support
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            Basic Encryption
+                        </li>
+                    </ul>
+                    <a href="https://roundcalls.odoo.com/pricing" class="cta-button">
+                        Get Started
+                        <i class="fas fa-arrow-left"/>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pricing-card" style="border-color: var(--accent);">
+                <div class="plan-tier">
+                    <div class="pro-badge">Most Popular</div>
+                    <h3>Premium Plan</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            25+ Languages with Cultural Translation
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            Dedicated Support Team
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            International Security Certificates
+                        </li>
+                    </ul>
+                    <a href="https://roundcalls.odoo.com/pricing" class="cta-button">
+                        Upgrade Now
+                        <i class="fas fa-rocket"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('tr.hover-effect').forEach(row =&gt; {
+        row.addEventListener('mouseenter', () =&gt; {
+            row.style.transform = 'scale(1.02)';
+            row.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+        });
+
+        row.addEventListener('mouseleave', () =&gt; {
+            row.style.transform = 'scale(1)';
+            row.style.boxShadow = 'none';
+        });
+    });
+
+    document.querySelectorAll('.cta-button').forEach(button =&gt; {
+        button.addEventListener('click', (e) =&gt; {
+            e.preventDefault();
+            window.location.href = "https://roundcalls.odoo.com/pricing";
+        });
+    });
+</script>
+<script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/>
+</template>
+        <div class="s_embed_code_embedded container o_not_editable"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>NeoM Tech - Integrated Solutions</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/><style>
+    :root {
+        --primary: #2A5C82;
+        --secondary: #32B4C1;
+        --accent: #FF6B6B;
+        --dark: #1A365D;
+    }
+
+    /* General Styles */
+    body {
+        margin: 0;
+        background: #f8f9fa;
+        font-family: 'Tajawal', sans-serif;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+    }
+
+    .pricing-card {
+        background: white;
+        border-radius: 25px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .plan-comparison {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .plan-tier {
+        padding: 2rem;
+        border-radius: 20px;
+        border: 2px solid var(--primary);
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: rgba(42,92,130,0.05);
+        border-radius: 10px;
+    }
+
+    /* Interactive Comparison Table */
+    .comparison-table {
+        overflow-x: auto;
+        margin: 3rem 0;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        min-width: 800px;
+    }
+
+    th, td {
+        padding: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    thead th {
+        background: var(--primary);
+        color: white;
+        font-size: 1.1rem;
+        position: sticky;
+        left: 0;
+    }
+
+    .pro-badge {
+        background: var(--accent);
+        color: white;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Interactive Effects */
+    .hover-effect {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .hover-effect:hover {
+        background: rgba(50,180,193,0.05);
+        transform: scale(1.02);
+    }
+
+    /* Buttons */
+    .cta-button {
+        background: var(--accent);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+    }
+</style><section class="pricing-section">
+    <div class="container">
+        <h2 style="color: var(--dark); text-align: center; margin-bottom: 3rem;">
+            <i class="fas fa-crown"/> Premium Plans Comparison
+        </h2>
+        
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th class="standard-plan">Standard Plans</th>
+                        <th class="premium-plan">Premium Plans</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-globe"/> Supported Languages</td>
+                        <td>15 Core Languages</td>
+                        <td><span class="pro-badge">25+ Languages</span> with Cultural Translation</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-headset"/> Support System</td>
+                        <td>24/7 Support via Core Channels</td>
+                        <td>Dedicated Support Team with Your Brand Name</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-shield"/> Security Standards</td>
+                        <td>Basic Data Encryption</td>
+                        <td>International Security Certificates (ISO 27001, GDPR)</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-paint-brush"/> Customization Options</td>
+                        <td>Limited Interface Adjustments</td>
+                        <td>Fully Customized Design Based on Visual Identity</td>
+                    </tr>
+                    <tr class="hover-effect">
+                        <td><i class="fas fa-plug"/> System Integrations</td>
+                        <td>5 Core Systems (Salesforce, Zendesk)</td>
+                        <td>Unlimited Integrations + Custom APIs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="plan-comparison">
+            <div class="pricing-card">
+                <div class="plan-tier">
+                    <h3>Standard Plan</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            15 Supported Languages
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            24/7 Support
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle" style="color: var(--primary);"/>
+                            Basic Encryption
+                        </li>
+                    </ul>
+                    <a href="https://roundcalls.odoo.com/pricing" class="cta-button">
+                        Get Started
+                        <i class="fas fa-arrow-left"/>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pricing-card" style="border-color: var(--accent);">
+                <div class="plan-tier">
+                    <div class="pro-badge">Most Popular</div>
+                    <h3>Premium Plan</h3>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            25+ Languages with Cultural Translation
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            Dedicated Support Team
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-star" style="color: var(--accent);"/>
+                            International Security Certificates
+                        </li>
+                    </ul>
+                    <a href="https://roundcalls.odoo.com/pricing" class="cta-button">
+                        Upgrade Now
+                        <i class="fas fa-rocket"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><script>
+    document.querySelectorAll('tr.hover-effect').forEach(row =&gt; {
+        row.addEventListener('mouseenter', () =&gt; {
+            row.style.transform = 'scale(1.02)';
+            row.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+        });
+
+        row.addEventListener('mouseleave', () =&gt; {
+            row.style.transform = 'scale(1)';
+            row.style.boxShadow = 'none';
+        });
+    });
+
+    document.querySelectorAll('.cta-button').forEach(button =&gt; {
+        button.addEventListener('click', (e) =&gt; {
+            e.preventDefault();
+            window.location.href = "https://roundcalls.odoo.com/pricing";
+        });
+    });
+</script><script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/></div>
+    </section></div>
+            </div>
+        </t>
+    </t>
