@@ -1,0 +1,2042 @@
+#codes in the page 
+<t name="Homepage" t-name="website.homepage">
+    <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'"/>
+        <div id="wrap" class="oe_structure"><section class="s_embed_code pt64 o_colored_level pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code" style="position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Connections/01&quot;,&quot;flip&quot;:[],&quot;showOnMobile&quot;:true,&quot;shapeAnimationSpeed&quot;:&quot;0&quot;}"><div class="o_we_shape o_web_editor_Connections_01 o_shape_show_mobile"/>
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rowand Cols | Smart Platform</title>
+<style>
+    /* Basic styles */
+    :root {
+        --main-color: #002366;
+        --accent-color: #00CC99;
+        --dark-bg: #001a33;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        background: var(--dark-bg);
+        color: white;
+    }
+
+    .hero-section {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    /* Interactive counter system */
+    .counter-system {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .counter-card {
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--accent-color);
+        border-radius: 15px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .counter-card:hover {
+        transform: scale(1.05);
+    }
+
+    .counter-number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin: 1rem 0;
+        text-shadow: 0 0 15px rgba(0, 204, 153, 0.5);
+    }
+
+    /* Inherited interactive styles */
+    .attention-wall {
+        /* Same styles as before */
+    }
+
+    /* ... Other styles from previous code ... */
+</style>
+
+<section class="hero-section">
+    <h1>✨ Our Platform in Numbers ✨</h1>
+    <p>We turn challenges into successes through numbers that speak for themselves</p>
+</section>
+
+<div class="counter-system">
+    <div class="counter-card">
+        <h3>Completed Projects</h3>
+        <div class="counter-number" data-target="268">0</div>
+        <p>Successful project since 2025</p>
+    </div>
+
+    <div class="counter-card">
+        <h3>Satisfied Clients</h3>
+        <div class="counter-number" data-target="153">0</div>
+        <p>Satisfaction rate of 98.7%</p>
+    </div>
+
+    <div class="counter-card">
+        <h3>Technical Support</h3>
+        <div class="counter-number" data-target="24">0</div>
+        <p>Hours of support daily</p>
+    </div>
+</div>
+
+<section class="attention-wall">
+    
+</section>
+
+<script>
+    // Advanced counter system
+    function animateCounter(counterElement, start, end, duration) {
+        let startTime = null;
+        
+        const animation = (currentTime) =&gt; {
+            if (!startTime) startTime = currentTime;
+            const progress = currentTime - startTime;
+            const increment = Math.floor(progress / duration * (end - start));
+            
+            if (increment &lt; end - start) {
+                counterElement.textContent = start + increment;
+                requestAnimationFrame(animation);
+            } else {
+                counterElement.textContent = end;
+            }
+        };
+        
+        requestAnimationFrame(animation);
+    }
+
+    // Trigger counters on scroll
+    const counters = document.querySelectorAll('.counter-number');
+    
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.dataset.target);
+                animateCounter(entry.target, 0, target, 2000);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter =&gt; observer.observe(counter));
+
+    // Rotating text (from previous code)
+    const rotateElement = document.querySelector('[data-rotate]');
+    if (rotateElement) {
+        const texts = rotateElement.dataset.rotate.split(',');
+        let current = 0;
+        
+        function rotateText() {
+            rotateElement.textContent = texts[current];
+            current = (current + 1) % texts.length;
+            setTimeout(rotateText, 3000);
+        }
+        rotateText();
+    }
+</script>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Rowand Cols | Smart Platform</title><style>
+    /* Basic styles */
+    :root {
+        --main-color: #002366;
+        --accent-color: #00CC99;
+        --dark-bg: #001a33;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        background: var(--dark-bg);
+        color: white;
+    }
+
+    .hero-section {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    /* Interactive counter system */
+    .counter-system {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .counter-card {
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--accent-color);
+        border-radius: 15px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .counter-card:hover {
+        transform: scale(1.05);
+    }
+
+    .counter-number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin: 1rem 0;
+        text-shadow: 0 0 15px rgba(0, 204, 153, 0.5);
+    }
+
+    /* Inherited interactive styles */
+    .attention-wall {
+        /* Same styles as before */
+    }
+
+    /* ... Other styles from previous code ... */
+</style><section class="hero-section">
+    <h1>✨ Our Platform in Numbers ✨</h1>
+    <p>We turn challenges into successes through numbers that speak for themselves</p>
+</section><div class="counter-system">
+    <div class="counter-card">
+        <h3>Completed Projects</h3>
+        <div class="counter-number" data-target="268">0</div>
+        <p>Successful project since 2025</p>
+    </div>
+
+    <div class="counter-card">
+        <h3>Satisfied Clients</h3>
+        <div class="counter-number" data-target="153">0</div>
+        <p>Satisfaction rate of 98.7%</p>
+    </div>
+
+    <div class="counter-card">
+        <h3>Technical Support</h3>
+        <div class="counter-number" data-target="24">0</div>
+        <p>Hours of support daily</p>
+    </div>
+</div><section class="attention-wall">
+    
+</section><script>
+    // Advanced counter system
+    function animateCounter(counterElement, start, end, duration) {
+        let startTime = null;
+        
+        const animation = (currentTime) =&gt; {
+            if (!startTime) startTime = currentTime;
+            const progress = currentTime - startTime;
+            const increment = Math.floor(progress / duration * (end - start));
+            
+            if (increment &lt; end - start) {
+                counterElement.textContent = start + increment;
+                requestAnimationFrame(animation);
+            } else {
+                counterElement.textContent = end;
+            }
+        };
+        
+        requestAnimationFrame(animation);
+    }
+
+    // Trigger counters on scroll
+    const counters = document.querySelectorAll('.counter-number');
+    
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.dataset.target);
+                animateCounter(entry.target, 0, target, 2000);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter =&gt; observer.observe(counter));
+
+    // Rotating text (from previous code)
+    const rotateElement = document.querySelector('[data-rotate]');
+    if (rotateElement) {
+        const texts = rotateElement.dataset.rotate.split(',');
+        let current = 0;
+        
+        function rotateText() {
+            rotateElement.textContent = texts[current];
+            current = (current + 1) % texts.length;
+            setTimeout(rotateText, 3000);
+        }
+        rotateText();
+    }
+</script></div>
+    </section><section class="s_embed_code o_colored_level pb256 pt0 text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rawand Cols | Peak of Technical Innovation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* جميع أنماط CSS السابقة تظل كما هي بدون تغيير */
+    :root {
+        --primary: #2563eb;
+        --secondary: #00c9ff;
+        --accent: #ff6b6b;
+        --dark: #0f172a;
+        --light: #f8fafc;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        background: var(--dark);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, var(--dark), var(--primary));
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: pulse 8s infinite;
+    }
+
+    .hero-content {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+        margin: 0;
+        background: linear-gradient(45deg, #fff, var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: text-glow 2s ease-in-out infinite alternate;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        padding: 5rem;
+        transform-style: preserve-3d;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 3rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.2),
+            transparent
+        );
+        transition: 0.5s;
+    }
+
+    .service-card:hover::before {
+        left: 100%;
+    }
+
+    .stat-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        padding: 4rem;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 2rem;
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .stat-number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, var(--secondary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 1rem 0;
+    }
+
+    .testimonial-slider {
+        display: flex;
+        gap: 2rem;
+        padding: 4rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .testimonial-card {
+        flex: 0 0 80%;
+        background: rgba(255,255,255,0.1);
+        border-radius: 25px;
+        padding: 2rem;
+        backdrop-filter: blur(10px);
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: scale(1.02);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(0.8); opacity: 0; }
+        50% { opacity: 0.4; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    @keyframes text-glow {
+        0% { text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+        100% { text-shadow: 0 0 30px var(--secondary); }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        
+        .card-grid {
+            padding: 2rem;
+            gap: 2rem;
+        }
+        
+        .service-card {
+            padding: 2rem;
+        }
+    }
+</style>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build the Future with Us</h1>
+    </div>
+</section>
+
+<div class="card-grid">
+    <div class="service-card">
+        <i class="fas fa-comments-dollar fa-3x" style="color: var(--secondary);"/>
+        <h3>Smart Contact Centers</h3>
+        <p>AI-Powered Integrated Systems</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="150">0</span> Active Clients</p>
+            <p><span class="stat-number" data-target="98">0</span>% Client Satisfaction</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-robot fa-3x" style="color: var(--accent);"/>
+        <h3>Robot Solutions</h3>
+        <p>Process Automation with Advanced AI</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="500">0</span> Operation/Day</p>
+            <p><span class="stat-number" data-target="99">0</span>% Accuracy</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-globe fa-3x" style="color: var(--primary);"/>
+        <h3>Global Expansion</h3>
+        <p>Multicultural &amp; Multilingual Solutions</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="15">0</span> Countries</p>
+            <p><span class="stat-number" data-target="12">0</span> Languages</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Enhanced Counter System
+    const animateCounters = () =&gt; {
+        const counters = document.querySelectorAll('.stat-number');
+        
+        counters.forEach(counter =&gt; {
+            const target = parseInt(counter.dataset.target);
+            let count = 0;
+            
+            const updateCounter = () =&gt; {
+                if (count &lt; target) {
+                    count++;
+                    counter.textContent = count;
+                    setTimeout(updateCounter, 50);
+                }
+            }
+            
+            updateCounter();
+        });
+    }
+
+    // Optimized Parallax Scroll Effect
+    window.addEventListener('scroll', () =&gt; {
+        const scrolled = window.pageYOffset;
+        if(document.querySelector('.hero')) {
+            document.querySelector('.hero').style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+        if(document.querySelector('.card-grid')) {
+            document.querySelector('.card-grid').style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+
+    // Initialize Counters on Load
+    window.addEventListener('load', animateCounters);
+
+    // Image Hover Effects
+    document.querySelectorAll('.client-photo').forEach(photo =&gt; {
+        photo.addEventListener('mouseenter', () =&gt; {
+            photo.style.transform = 'rotate(5deg) scale(1.1)';
+        });
+        
+        photo.addEventListener('mouseleave', () =&gt; {
+            photo.style.transform = 'none';
+        });
+    });
+</script></template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Rawand Cols | Peak of Technical Innovation</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/><style>
+    /* جميع أنماط CSS السابقة تظل كما هي بدون تغيير */
+    :root {
+        --primary: #2563eb;
+        --secondary: #00c9ff;
+        --accent: #ff6b6b;
+        --dark: #0f172a;
+        --light: #f8fafc;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        background: var(--dark);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, var(--dark), var(--primary));
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: pulse 8s infinite;
+    }
+
+    .hero-content {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+        margin: 0;
+        background: linear-gradient(45deg, #fff, var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: text-glow 2s ease-in-out infinite alternate;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        padding: 5rem;
+        transform-style: preserve-3d;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 3rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.2),
+            transparent
+        );
+        transition: 0.5s;
+    }
+
+    .service-card:hover::before {
+        left: 100%;
+    }
+
+    .stat-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        padding: 4rem;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 2rem;
+        border: 2px solid var(--secondary);
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .stat-number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, var(--secondary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 1rem 0;
+    }
+
+    .testimonial-slider {
+        display: flex;
+        gap: 2rem;
+        padding: 4rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .testimonial-card {
+        flex: 0 0 80%;
+        background: rgba(255,255,255,0.1);
+        border-radius: 25px;
+        padding: 2rem;
+        backdrop-filter: blur(10px);
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: scale(1.02);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(0.8); opacity: 0; }
+        50% { opacity: 0.4; }
+        100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    @keyframes text-glow {
+        0% { text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+        100% { text-shadow: 0 0 30px var(--secondary); }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        
+        .card-grid {
+            padding: 2rem;
+            gap: 2rem;
+        }
+        
+        .service-card {
+            padding: 2rem;
+        }
+    }
+</style><section class="hero">
+    <div class="hero-content">
+        <h1>Build the Future with Us</h1>
+    </div>
+</section><div class="card-grid">
+    <div class="service-card">
+        <i class="fas fa-comments-dollar fa-3x" style="color: var(--secondary);"/>
+        <h3>Smart Contact Centers</h3>
+        <p>AI-Powered Integrated Systems</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="150">0</span> Active Clients</p>
+            <p><span class="stat-number" data-target="98">0</span>% Client Satisfaction</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-robot fa-3x" style="color: var(--accent);"/>
+        <h3>Robot Solutions</h3>
+        <p>Process Automation with Advanced AI</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="500">0</span> Operation/Day</p>
+            <p><span class="stat-number" data-target="99">0</span>% Accuracy</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <i class="fas fa-globe fa-3x" style="color: var(--primary);"/>
+        <h3>Global Expansion</h3>
+        <p>Multicultural &amp;amp; Multilingual Solutions</p>
+        <div class="stats">
+            <p><span class="stat-number" data-target="15">0</span> Countries</p>
+            <p><span class="stat-number" data-target="12">0</span> Languages</p>
+        </div>
+    </div>
+</div><script>
+    // Enhanced Counter System
+    const animateCounters = () =&gt; {
+        const counters = document.querySelectorAll('.stat-number');
+        
+        counters.forEach(counter =&gt; {
+            const target = parseInt(counter.dataset.target);
+            let count = 0;
+            
+            const updateCounter = () =&gt; {
+                if (count &lt; target) {
+                    count++;
+                    counter.textContent = count;
+                    setTimeout(updateCounter, 50);
+                }
+            }
+            
+            updateCounter();
+        });
+    }
+
+    // Optimized Parallax Scroll Effect
+    window.addEventListener('scroll', () =&gt; {
+        const scrolled = window.pageYOffset;
+        if(document.querySelector('.hero')) {
+            document.querySelector('.hero').style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+        if(document.querySelector('.card-grid')) {
+            document.querySelector('.card-grid').style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+
+    // Initialize Counters on Load
+    window.addEventListener('load', animateCounters);
+
+    // Image Hover Effects
+    document.querySelectorAll('.client-photo').forEach(photo =&gt; {
+        photo.addEventListener('mouseenter', () =&gt; {
+            photo.style.transform = 'rotate(5deg) scale(1.1)';
+        });
+        
+        photo.addEventListener('mouseleave', () =&gt; {
+            photo.style.transform = 'none';
+        });
+    });
+</script></div>
+    </section><div class="s_hr o_colored_level pt208 pb0" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto"/>
+    </div><section class="s_embed_code o_colored_level pt256 text-center pb256" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved">
+
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Rawand Cols - Data-driven business solutions and strategic consulting services"/>
+    <title>Rawand Cols | Data-Driven Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #00c9ff;
+            --accent: #ff6b6b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background: var(--dark);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--dark), var(--primary));
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 8s infinite;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0 0 1rem 0;
+            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-glow 2s ease-in-out infinite alternate;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            min-height: 350px;
+            opacity: 0;
+            transform: translateY(20px);
+            will-change: transform;
+        }
+
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.15),
+                transparent
+            );
+            transition: 0.6s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-title {
+            color: var(--secondary);
+            font-size: 1.75rem;
+            margin: 1.5rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .description-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(15, 23, 42, 0.9));
+            margin: 6rem 0;
+            backdrop-filter: blur(15px);
+            border-top: 1px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
+            position: relative;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.8rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .feature-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { opacity: 0.4; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        @keyframes text-glow {
+            0% { text-shadow: 0 0 10px rgba(0, 200, 255, 0.3); }
+            100% { text-shadow: 0 0 30px var(--secondary); }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .card-grid {
+                padding: 2rem;
+            }
+            
+            .service-card {
+                min-height: 300px;
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: 70vh;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Data-Driven Business Excellence</h1>
+            <p>Transform your organization with actionable insights and strategic innovation</p>
+        </div>
+    </section>
+
+    <div class="card-grid">
+        <div class="service-card">
+            <i class="fas fa-chess service-icon" style="color: var(--secondary);" aria-hidden="true"/>
+            <h3 class="service-title">Strategic Planning</h3>
+            <p>Align your business goals with data-backed strategies for sustainable growth.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-brain service-icon" style="color: var(--accent);" aria-hidden="true"/>
+            <h3 class="service-title">Expert Consulting</h3>
+            <p>Transformative guidance to optimize resources and maximize ROI.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-chart-line service-icon" style="color: var(--primary);" aria-hidden="true"/>
+            <h3 class="service-title">Advanced Analytics</h3>
+            <p>Predictive insights and market intelligence for competitive advantage.</p>
+        </div>
+    </div>
+
+    <section class="description-section">
+        <div class="card-grid">
+            <div class="service-card">
+                <i class="fas fa-headset service-icon" style="color: var(--secondary);" aria-hidden="true"/>
+                <h3 class="service-title">360° Business Solutions</h3>
+                <p class="highlight-text">Comprehensive enterprise transformation:</p>
+                <ul class="feature-list">
+                    <li>End-to-end process optimization</li>
+                    <li>Data-driven decision frameworks</li>
+                    <li>Market leadership strategies</li>
+                    <li>Sustainable innovation pipelines</li>
+                </ul>
+                <p>Leverage cutting-edge analytics and industry expertise to future-proof your organization.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () =&gt; {
+            // Intersection Observer for smooth card animations
+            const observer = new IntersectionObserver((entries) =&gt; {
+                entries.forEach(entry =&gt; {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.service-card').forEach(card =&gt; {
+                observer.observe(card);
+            });
+
+            // Dynamic card interactions
+            document.querySelectorAll('.service-card').forEach(card =&gt; {
+                const icon = card.querySelector('.service-icon');
+                
+                card.addEventListener('mouseenter', () =&gt; {
+                    card.style.transform = 'translateY(-10px) scale(1.03)';
+                    if(icon) icon.style.transform = 'rotate(15deg) scale(1.1)';
+                });
+                
+                card.addEventListener('mouseleave', () =&gt; {
+                    card.style.transform = 'translateY(0) scale(1)';
+                    if(icon) icon.style.transform = 'none';
+                });
+            });
+
+            // Smooth scroll behavior
+            document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Performance-optimized parallax
+            let lastScroll = 0;
+            const parallaxElements = [
+                { element: document.querySelector('.hero'), factor: 0.3 },
+                { element: document.querySelector('.description-section'), factor: 0.2 }
+            ];
+
+            const updateParallax = () =&gt; {
+                const scrolled = window.pageYOffset;
+                
+                parallaxElements.forEach(({ element, factor }) =&gt; {
+                    if(element) {
+                        const offset = scrolled * factor;
+                        element.style.transform = `translateY(${offset}px)`;
+                    }
+                });
+
+                lastScroll = scrolled;
+                requestAnimationFrame(updateParallax);
+            };
+            requestAnimationFrame(updateParallax);
+        });
+    </script>
+
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Rawand Cols - Data-driven business solutions and strategic consulting services"/><title>Rawand Cols | Data-Driven Excellence</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/><style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #00c9ff;
+            --accent: #ff6b6b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background: var(--dark);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--dark), var(--primary));
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 8s infinite;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0 0 1rem 0;
+            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-glow 2s ease-in-out infinite alternate;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            min-height: 350px;
+            opacity: 0;
+            transform: translateY(20px);
+            will-change: transform;
+        }
+
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.15),
+                transparent
+            );
+            transition: 0.6s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-title {
+            color: var(--secondary);
+            font-size: 1.75rem;
+            margin: 1.5rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .description-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(15, 23, 42, 0.9));
+            margin: 6rem 0;
+            backdrop-filter: blur(15px);
+            border-top: 1px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
+            position: relative;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.8rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .feature-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { opacity: 0.4; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        @keyframes text-glow {
+            0% { text-shadow: 0 0 10px rgba(0, 200, 255, 0.3); }
+            100% { text-shadow: 0 0 30px var(--secondary); }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .card-grid {
+                padding: 2rem;
+            }
+            
+            .service-card {
+                min-height: 300px;
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: 70vh;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style><section class="hero">
+        <div class="hero-content">
+            <h1>Data-Driven Business Excellence</h1>
+            <p>Transform your organization with actionable insights and strategic innovation</p>
+        </div>
+    </section><div class="card-grid">
+        <div class="service-card">
+            <i class="fas fa-chess service-icon" style="color: var(--secondary);" aria-hidden="true"/>
+            <h3 class="service-title">Strategic Planning</h3>
+            <p>Align your business goals with data-backed strategies for sustainable growth.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-brain service-icon" style="color: var(--accent);" aria-hidden="true"/>
+            <h3 class="service-title">Expert Consulting</h3>
+            <p>Transformative guidance to optimize resources and maximize ROI.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-chart-line service-icon" style="color: var(--primary);" aria-hidden="true"/>
+            <h3 class="service-title">Advanced Analytics</h3>
+            <p>Predictive insights and market intelligence for competitive advantage.</p>
+        </div>
+    </div><section class="description-section">
+        <div class="card-grid">
+            <div class="service-card">
+                <i class="fas fa-headset service-icon" style="color: var(--secondary);" aria-hidden="true"/>
+                <h3 class="service-title">360° Business Solutions</h3>
+                <p class="highlight-text">Comprehensive enterprise transformation:</p>
+                <ul class="feature-list">
+                    <li>End-to-end process optimization</li>
+                    <li>Data-driven decision frameworks</li>
+                    <li>Market leadership strategies</li>
+                    <li>Sustainable innovation pipelines</li>
+                </ul>
+                <p>Leverage cutting-edge analytics and industry expertise to future-proof your organization.</p>
+            </div>
+        </div>
+    </section><script>
+        document.addEventListener('DOMContentLoaded', () =&gt; {
+            // Intersection Observer for smooth card animations
+            const observer = new IntersectionObserver((entries) =&gt; {
+                entries.forEach(entry =&gt; {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.service-card').forEach(card =&gt; {
+                observer.observe(card);
+            });
+
+            // Dynamic card interactions
+            document.querySelectorAll('.service-card').forEach(card =&gt; {
+                const icon = card.querySelector('.service-icon');
+                
+                card.addEventListener('mouseenter', () =&gt; {
+                    card.style.transform = 'translateY(-10px) scale(1.03)';
+                    if(icon) icon.style.transform = 'rotate(15deg) scale(1.1)';
+                });
+                
+                card.addEventListener('mouseleave', () =&gt; {
+                    card.style.transform = 'translateY(0) scale(1)';
+                    if(icon) icon.style.transform = 'none';
+                });
+            });
+
+            // Smooth scroll behavior
+            document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Performance-optimized parallax
+            let lastScroll = 0;
+            const parallaxElements = [
+                { element: document.querySelector('.hero'), factor: 0.3 },
+                { element: document.querySelector('.description-section'), factor: 0.2 }
+            ];
+
+            const updateParallax = () =&gt; {
+                const scrolled = window.pageYOffset;
+                
+                parallaxElements.forEach(({ element, factor }) =&gt; {
+                    if(element) {
+                        const offset = scrolled * factor;
+                        element.style.transform = `translateY(${offset}px)`;
+                    }
+                });
+
+                lastScroll = scrolled;
+                requestAnimationFrame(updateParallax);
+            };
+            requestAnimationFrame(updateParallax);
+        });
+    </script></div>
+    </section><div class="s_hr o_colored_level pb256 pt256" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto"/>
+    </div><section class="s_embed_code o_colored_level pt0 pb256 text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rawand Cols | Frequently Asked Questions</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+        --primary: #2563eb;
+        --secondary: #00c9ff;
+        --accent: #ff6b6b;
+        --dark: #0f172a;
+        --light: #f8fafc;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        background: var(--dark);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .faq-section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        transform: translateZ(0);
+    }
+
+    .faq-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, var(--secondary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .faq-container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-item.active {
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .faq-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .faq-question {
+        color: var(--secondary);
+        font-size: 1.2rem;
+        margin: 0;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .faq-icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        color: rgba(255,255,255,0.9);
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 1000px;
+        padding-top: 1.5rem;
+    }
+
+    .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+        color: var(--accent);
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem;
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-info a {
+        color: var(--secondary);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .contact-info a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .faq-title {
+            font-size: 2rem;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            padding: 1.5rem;
+        }
+    }
+
+    /* Enhanced Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .faq-item {
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+    }
+
+    .faq-item:nth-child(1) { animation-delay: 0.1s; }
+    .faq-item:nth-child(2) { animation-delay: 0.2s; }
+    .faq-item:nth-child(3) { animation-delay: 0.3s; }
+</style>
+
+<section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">What services does your company offer?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <p>We specialize in comprehensive customer service solutions for e-commerce businesses, startups, and enterprise clients. Our services include:</p>
+                <ul>
+                    <li>24/7 customer support</li>
+                    <li>Business process automation</li>
+                    <li>AI-powered analytics</li>
+                    <li>Multilingual support solutions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">How can I contact technical support?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <p>Reach our support team through multiple channels:</p>
+                <ul>
+                    <li>Email: <a href="mailto:roundcalls@gmail.com">roundcalls@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+201065419793">+20106 541 9793</a></li>
+                    <li>Live chat on our website</li>
+                    <li>Dedicated client portal</li>
+                </ul>
+                <p>Our multilingual support team is available 24/7/365.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">What is your privacy policy?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <ol>
+                    <li><strong>Data Collection:</strong> We only collect essential service-related information</li>
+                    <li><strong>Data Usage:</strong> Strictly for service improvement and delivery</li>
+                    <li><strong>Data Protection:</strong> Enterprise-grade encryption and security protocols</li>
+                    <li><strong>Data Sharing:</strong> Never shared without explicit consent</li>
+                    <li><strong>Client Rights:</strong> Full control over data access and deletion</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h3>Still have questions?</h3>
+        <p>Call us at <a href="tel:+201065419793">+20106 541 9793</a> <br/>
+            or email <a href="mailto:roundcalls@gmail.com">roundcalls@gmail.com</a></p>
+    </div>
+</section>
+
+<script>
+    // Enhanced FAQ Functionality
+    document.querySelectorAll('.faq-item').forEach(item =&gt; {
+        item.addEventListener('click', () =&gt; {
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i =&gt; i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+            
+            const icons = document.querySelectorAll('.faq-icon');
+            icons.forEach(icon =&gt; {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-plus');
+            });
+            
+            if (!isActive) {
+                item.querySelector('.faq-icon').classList.replace('fa-plus', 'fa-times');
+            }
+        });
+    });
+
+    // Smooth Scroll Effect
+    window.addEventListener('scroll', () =&gt; {
+        const scrolled = window.pageYOffset;
+        document.querySelector('.faq-section').style.transform = `translateY(${scrolled * 0.1}px)`;
+    });
+
+    // Intersection Observer for Animations
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.faq-item').forEach(item =&gt; {
+        observer.observe(item);
+    });
+</script>
+<script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Rawand Cols | Frequently Asked Questions</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&amp;display=swap" rel="stylesheet"/><style>
+    :root {
+        --primary: #2563eb;
+        --secondary: #00c9ff;
+        --accent: #ff6b6b;
+        --dark: #0f172a;
+        --light: #f8fafc;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        background: var(--dark);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .faq-section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        transform: translateZ(0);
+    }
+
+    .faq-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, var(--secondary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .faq-container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .faq-item {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-item.active {
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .faq-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .faq-question {
+        color: var(--secondary);
+        font-size: 1.2rem;
+        margin: 0;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .faq-icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        color: rgba(255,255,255,0.9);
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 1000px;
+        padding-top: 1.5rem;
+    }
+
+    .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+        color: var(--accent);
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem;
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-info a {
+        color: var(--secondary);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .contact-info a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .faq-title {
+            font-size: 2rem;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            padding: 1.5rem;
+        }
+    }
+
+    /* Enhanced Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .faq-item {
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+    }
+
+    .faq-item:nth-child(1) { animation-delay: 0.1s; }
+    .faq-item:nth-child(2) { animation-delay: 0.2s; }
+    .faq-item:nth-child(3) { animation-delay: 0.3s; }
+</style><section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">What services does your company offer?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <p>We specialize in comprehensive customer service solutions for e-commerce businesses, startups, and enterprise clients. Our services include:</p>
+                <ul>
+                    <li>24/7 customer support</li>
+                    <li>Business process automation</li>
+                    <li>AI-powered analytics</li>
+                    <li>Multilingual support solutions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">How can I contact technical support?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <p>Reach our support team through multiple channels:</p>
+                <ul>
+                    <li>Email: <a href="mailto:roundcalls@gmail.com">roundcalls@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+201065419793">+20106 541 9793</a></li>
+                    <li>Live chat on our website</li>
+                    <li>Dedicated client portal</li>
+                </ul>
+                <p>Our multilingual support team is available 24/7/365.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <h3 class="faq-question">What is your privacy policy?</h3>
+                <i class="fas fa-plus faq-icon"/>
+            </div>
+            <div class="faq-answer">
+                <ol>
+                    <li><strong>Data Collection:</strong> We only collect essential service-related information</li>
+                    <li><strong>Data Usage:</strong> Strictly for service improvement and delivery</li>
+                    <li><strong>Data Protection:</strong> Enterprise-grade encryption and security protocols</li>
+                    <li><strong>Data Sharing:</strong> Never shared without explicit consent</li>
+                    <li><strong>Client Rights:</strong> Full control over data access and deletion</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h3>Still have questions?</h3>
+        <p>Call us at <a href="tel:+201065419793">+20106 541 9793</a> <br/>
+            or email <a href="mailto:roundcalls@gmail.com">roundcalls@gmail.com</a></p>
+    </div>
+</section><script>
+    // Enhanced FAQ Functionality
+    document.querySelectorAll('.faq-item').forEach(item =&gt; {
+        item.addEventListener('click', () =&gt; {
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i =&gt; i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+            
+            const icons = document.querySelectorAll('.faq-icon');
+            icons.forEach(icon =&gt; {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-plus');
+            });
+            
+            if (!isActive) {
+                item.querySelector('.faq-icon').classList.replace('fa-plus', 'fa-times');
+            }
+        });
+    });
+
+    // Smooth Scroll Effect
+    window.addEventListener('scroll', () =&gt; {
+        const scrolled = window.pageYOffset;
+        document.querySelector('.faq-section').style.transform = `translateY(${scrolled * 0.1}px)`;
+    });
+
+    // Intersection Observer for Animations
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.faq-item').forEach(item =&gt; {
+        observer.observe(item);
+    });
+</script><script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/></div>
+    </section><div class="s_hr o_colored_level pt0 pb256" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto"/>
+    </div><div class="s_hr pt32 pb32 o_colored_level" data-snippet="s_hr" data-name="Separator">
+        <hr class="w-100 mx-auto"/>
+    </div><section class="s_cta_box o_cc o_cc5 pb120 o_colored_level pt0" data-oe-shape-data="{'shape':'web_editor/Connections/20','colors':{'c5': 'o-color-4'}, 'flip':['y'], 'showOnMobile':true}" data-snippet="s_cta_box" data-name="مربع دعوة إلى اتخاذ إجراء ">
+        <div class="o_we_shape o_web_editor_Connections_20 o_footer_extra_shape_mapping" style="background-image: url(&quot;/web_editor/shape/web_editor/Connections/20.svg?c5=o-color-4&amp;flip=y&quot;); background-position: 50% 0%;"/>
+        <div class="container">
+            <div class="s_card o_card_img_horizontal flex-lg-row-reverse card o_cc o_cc5 o_colored_level" data-snippet="s_card" data-vxml="001" data-name="Card" style="--card-spacer-x: 64px; --card-spacer-y: 64px; border-width: 0px !important; --card-img-size-h: 50%;">
+                <figure class="o_card_img_wrapper ratio ratio-1x1 mb-0">
+                    <img src="/web/image/455-5eb98d88/1000049563.svg" alt="" class="o_card_img rounded-end img img-fluid o_we_custom_image" data-mimetype="image/svg+xml" data-original-id="454" data-original-src="/web/image/454-576ed5e3/1000049563.jpg" data-mimetype-before-conversion="image/jpeg" data-quality="100" data-shape="web_editor/geometric_round/geo_round_circle" data-file-name="1000049563.svg" data-shape-colors=";;;;" data-original-mimetype="image/webp" loading="lazy" data-width="1920" data-height="1920" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+       قم بتطوير عملياتك من خلال خدماتنا المتخصصة في تطوير الأعمال
+    </h2>
+                    <p class="card-text">
+       تواصل معنا واعرف كيف يمكننا مساعدتك في تحقيق أهدافك.
+    </p>
+                    <a class="btn btn-lg btn-primary" href="/contactus">تواصل معنا</a>
+                </div>
+             </div><section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form" data-name="الاستمارة ">
+        <div class="container-fluid">
+            <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you">
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="obij2aulqyau">
+                                <span class="s_website_form_label_content">اسمك</span>
+                                <span class="s_website_form_mark"> *</span> 
+                            </label>
+                            <div class="col-sm">
+                                <input class="form-control s_website_form_input" type="text" name="name" required="1" data-fill-with="name" id="obij2aulqyau"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="tel">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ozp7022vqhe">
+                                <span class="s_website_form_label_content">رقم الهاتف</span>
+                            </label>
+                            <div class="col-sm">
+                                <input class="form-control s_website_form_input" type="tel" name="phone" data-fill-with="phone" id="ozp7022vqhe"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="email">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oub62hlfgjwf">
+                                <span class="s_website_form_label_content">بريدك الإلكتروني</span>
+                                <span class="s_website_form_mark"> *</span> 
+                            </label>
+                            <div class="col-sm">
+                                <input class="form-control s_website_form_input" type="email" name="email_from" required="" data-fill-with="email" id="oub62hlfgjwf"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="char">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o291di1too2s">
+                                <span class="s_website_form_label_content">شركتك</span>
+                            </label>
+                            <div class="col-sm">
+                                <input class="form-control s_website_form_input" type="text" name="company" data-fill-with="commercial_company_name" id="o291di1too2s"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oqsf4m51acj">
+                                <span class="s_website_form_label_content">الموضوع</span>
+                                <span class="s_website_form_mark"> *</span>
+                            </label>
+                            <div class="col-sm">
+                                <input class="form-control s_website_form_input" type="text" name="subject" required="" id="oqsf4m51acj"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="text">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oyeqnysxh10b">
+                                <span class="s_website_form_label_content">سؤالك</span>
+                                <span class="s_website_form_mark"> *</span>
+                            </label>
+                            <div class="col-sm">
+                                <textarea class="form-control s_website_form_input" name="description" required="1" id="oyeqnysxh10b" rows="3"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_dnone"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"><span class="s_website_form_label_content"/></label><div class="col-sm"><input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/><input type="hidden" value="371876e386e0491ed220cd2250bcb8612171e4c9f9c1812821d0a49265a65413" class="form-control s_website_form_input s_website_form_custom" name="website_form_signature"/></div></div></div><div class="mb-0 py-2 col-12 s_website_form_submit text-end s_website_form_no_submit_label" data-name="Submit Button">
+                        <div style="width: 200px;" class="s_website_form_label"/>
+                        <span id="s_website_form_result"/>
+                        <a href="#" role="button" class="btn btn-primary s_website_form_send">إرسال</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+        </div>
+    </section></div>
+    </t>
+</t>
