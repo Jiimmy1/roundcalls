@@ -1,0 +1,1278 @@
+#Go Daddy home page codes 
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rowand Calls | Business Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --pure-white: #ffffff;
+        --deep-blue: #002366;
+        --electric-blue: #0066ff;
+        --coal-black: #1a1a1a;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--pure-white);
+        color: var(--coal-black);
+        line-height: 1.7;
+    }
+
+    .hero-section {
+        padding: 6rem 2rem;
+        text-align: center;
+        border-bottom: 3px solid var(--deep-blue);
+        position: relative;
+    }
+
+    .counter-system {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .counter-card {
+        background: var(--pure-white);
+        border: 2px solid var(--electric-blue);
+        border-radius: 15px;
+        padding: 2rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 20px rgba(0, 102, 255, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .counter-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 30px rgba(0, 102, 255, 0.2);
+    }
+
+    .counter-number {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 1.5rem 0;
+        color: var(--deep-blue);
+        position: relative;
+    }
+
+    .counter-card h3 {
+        color: var(--coal-black);
+        font-size: 1.3rem;
+        letter-spacing: -0.5px;
+    }
+
+    .counter-card p {
+        color: #666;
+        font-size: 1rem;
+    }
+
+    /* Animated Border Effect */
+    .counter-card::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        animation: borderPulse 2s infinite;
+    }
+
+    @keyframes borderPulse {
+        0% { border-color: rgba(0, 102, 255, 0); }
+        50% { border-color: var(--electric-blue); }
+        100% { border-color: rgba(0, 102, 255, 0); }
+    }
+
+    /* Progress Wave Effect */
+    .progress-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: rgba(0, 102, 255, 0.1);
+        overflow: hidden;
+    }
+
+    .progress-wave::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: var(--electric-blue);
+        animation: wave 1.5s linear infinite;
+    }
+
+    @keyframes wave {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(200%); }
+    }
+</style>
+
+<section class="hero-section">
+    <h1 style="color: var(--deep-blue); font-size: 2.8rem;">
+        <span style="color: var(--electric-blue);">|</span> 
+        Data-Driven Results 
+        <span style="color: var(--electric-blue);">|</span>
+    </h1>
+    <p style="color: #666;">Measurable business growth through intelligent solutions</p>
+</section>
+
+<div class="counter-system">
+    <div class="counter-card">
+        <div class="progress-wave"></div>
+        <h3>Revenue Boost</h3>
+        <div class="counter-number" data-target="95">0</div>
+        <p>Average client growth percentage</p>
+    </div>
+
+    <div class="counter-card">
+        <div class="progress-wave"></div>
+        <h3>Global Clients</h3>
+        <div class="counter-number" data-target="268">0</div>
+        <p>Active international partnerships</p>
+    </div>
+
+    <div class="counter-card">
+        <div class="progress-wave"></div>
+        <h3>Success Rate</h3>
+        <div class="counter-number" data-target="99">0</div>
+        <p>Client satisfaction score</p>
+    </div>
+</div>
+
+<script>
+    // Enhanced Counter Animation
+    function animateCounter(element, start, end, duration) {
+        const startTime = performance.now();
+        
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            element.textContent = Math.floor(progress * (end - start) + start);
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.style.color = 'var(--electric-blue)';
+                element.style.textShadow = '0 0 15px rgba(0, 102, 255, 0.2)';
+            }
+        };
+        
+        requestAnimationFrame(updateCounter);
+    }
+
+    // Smart Scroll Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetNumber = parseInt(entry.target.dataset.target);
+                animateCounter(entry.target, 0, targetNumber, 2000);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter-number').forEach(counter => {
+        observer.observe(counter);
+    });
+
+    // Hover Sound Effect (optional)
+    document.querySelectorAll('.counter-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+</script>
+
+
+  <section class="excellence-showcase">
+    <div class="hero-pulse">
+        <div class="core-orb"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring delay-1"></div>
+    </div>
+    
+    <h2 class="rhetorical-headline">
+        <span class="gradient-text">While Others Sell Pieces,</span><br>
+        We Deliver The Complete Growth Machine
+    </h2>
+
+    <div class="differentiator-grid">
+        <!-- Card 1 -->
+        <div class="differentiator-card">
+            <div class="card-orb" style="--hue: 200"></div>
+            <h3>The End-to-End Paradox</h3>
+            <p class="card-copy">
+                Where traditional agencies force you to manage 7+ specialized vendors,<br>
+                <strong>our Unified Growth Cortex™</strong> seamlessly integrates:
+            </p>
+            <div class="capability-scroller">
+                <span class="capability-tag">AI-Powered Lead Engines</span>
+                <span class="capability-tag">Market Conquest Blueprints</span>
+                <span class="capability-tag">Revenue Acceleration Algorithms</span>
+                <span class="capability-tag">Client Experience Orchestration</span>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="differentiator-card">
+            <div class="card-orb" style="--hue: 160"></div>
+            <h3>Intelligence That Evolves With You</h3>
+            <div class="evolution-graph">
+                <div class="data-point" style="--x: 10%; --y: 30%">
+                    <div class="data-pulse"></div>
+                    <div class="data-label">Market Shift Detected</div>
+                </div>
+                <div class="data-point" style="--x: 40%; --y: 60%">
+                    <div class="data-pulse"></div>
+                    <div class="data-label">Strategy Adapted</div>
+                </div>
+                <div class="data-point" style="--x: 70%; --y: 45%">
+                    <div class="data-pulse"></div>
+                    <div class="data-label">Execution Optimized</div>
+                </div>
+            </div>
+            <p class="card-copy">
+                Our systems don't just respond - they anticipate.<br> 
+                <em>Real-world results:</em> 92% faster pivot execution vs. industry average
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="differentiator-card">
+            <div class="card-orb" style="--hue: 120"></div>
+            <h3>Your Growth, Our Obsession</h3>
+            <div class="commitment-scale">
+                <div class="needle"></div>
+                <div class="commitment-metric">437%</div>
+                <div class="scale-labels">
+                    <span>Typical Agency Effort</span>
+                    <span>RoundCalls Commitment</span>
+                </div>
+            </div>
+            <p class="card-copy">
+                We measure success in your milestones, not ours.<br>
+                <button class="proof-trigger">See Client Conquests <i class="fas fa-chevron-right"></i></button>
+            </p>
+        </div>
+    </div>
+
+    <div class="strategic-cta">
+        <p class="cta-copy">
+            <span class="cta-lead">Ready to Replace 7 Vendors</span><br>
+            <span class="cta-sub">With One Strategic Weapon?</span>
+        </p>
+        <div class="cta-group">
+            <button class="dominant-cta">Blueprint Your Dominance</button>
+            <button class="ghost-cta">See Machinery in Motion</button>
+        </div>
+    </div>
+</section>
+
+<style>
+.excellence-showcase {
+    padding: 8rem 2rem;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-pulse {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.core-orb {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, 
+        rgba(0, 200, 179, 0.1) 0%, 
+        rgba(255, 215, 0, 0.05) 100%);
+    border-radius: 50%;
+    animation: orb-glow 6s infinite;
+}
+
+.pulse-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 200, 179, 0.15);
+    border-radius: 50%;
+    animation: pulse 4s infinite;
+}
+
+.delay-1 { animation-delay: 0.5s; }
+
+@keyframes orb-glow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes pulse {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.3); opacity: 0; }
+}
+
+.rhetorical-headline {
+    font-size: 2.8rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 6rem;
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #002366, #00C8B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.differentiator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto 6rem;
+}
+
+.differentiator-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.differentiator-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+}
+
+.card-orb {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: hsl(var(--hue), 100%, 50%, 0.03);
+    border-radius: 50%;
+    filter: blur(60px);
+    top: -50px;
+    right: -50px;
+    z-index: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #002366;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.capability-scroller {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+}
+
+.capability-tag {
+    background: rgba(0, 200, 179, 0.1);
+    color: #002366;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.capability-tag:hover {
+    background: #00C8B3;
+    color: white;
+    transform: scale(1.05);
+}
+
+.strategic-cta {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dominant-cta {
+    background: #002366;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.dominant-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 35, 102, 0.3);
+}
+
+.ghost-cta {
+    background: transparent;
+    color: #002366;
+    border: 2px solid #002366;
+    margin-left: 1rem;
+}
+</style>
+
+<script>
+document.querySelectorAll('.capability-tag').forEach(tag => {
+    tag.addEventListener('mouseover', () => {
+        tag.style.transform = 'scale(1.05) rotate(2deg)';
+    });
+    tag.addEventListener('mouseout', () => {
+        tag.style.transform = 'none';
+    });
+});
+
+// Animate elements on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.differentiator-card').forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(30px)';
+    observer.observe(card);
+});
+</script>
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoundCalls | Growth Architects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --dominant-blue: #002366;
+            --action-teal: #00C8B3;
+            --pure-white: #FFFFFF;
+            --success-gold: #FFD700;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--pure-white);
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+
+        /* Typing Effect Styles */
+        .typed-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid var(--action-teal);
+            animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--action-teal) }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 8rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, 
+                rgba(0, 35, 102, 0.1) 0%, 
+                rgba(0, 200, 179, 0.05) 100%);
+            position: relative;
+        }
+
+        .hero-badge {
+            background: var(--success-gold);
+            color: var(--dominant-blue);
+            padding: 8px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            animation: badgePulse 2s infinite;
+        }
+
+        @keyframes badgePulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: var(--pure-white);
+            border: 2px solid var(--action-teal);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 200, 179, 0.15);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--dominant-blue), var(--action-teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 1rem 0;
+        }
+
+        /* Testimonial Carousel */
+        .testimonial-carousel {
+            background: var(--dominant-blue);
+            padding: 6rem 2rem;
+            position: relative;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        .carousel-item {
+            position: absolute;
+            width: 100%;
+            max-width: 800px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: all 0.8s ease;
+            text-align: center;
+            color: white;
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        .testimonial-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            min-height: 120px;
+        }
+
+        .client-info {
+            color: var(--action-teal);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--action-teal);
+            width: 0;
+            animation: progress 7s linear;
+        }
+
+        @keyframes progress {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero-section">
+    <div class="hero-badge">2024 Industry Leader</div>
+    <h1 style="font-size: 3rem; color: var(--dominant-blue); margin-bottom: 1.5rem;">
+        <span id="typing-percent" style="color: var(--action-teal);"></span><br>
+        <span id="typing-text"></span>
+    </h1>
+    <div class="progress-track">
+        <div class="progress-bar" style="width: 87%"></div>
+    </div>
+    <p style="font-size: 1.2rem; color: #666; max-width: 800px; margin: 0 auto;">
+        "They delivered 3X our projected growth metrics in the first quarter alone"<br>
+        - Mohamed A., CEO @TechPulse Dubai
+    </p>
+</section>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number" data-target="312">0</div>
+        <h3>Market Entries</h3>
+        <p>Successful regional expansions</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="4.8">0</div>
+        <h3>Billion Dollars</h3>
+        <p>Client revenue generated in 2024</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="97">0</div>
+        <h3>% Client Retention</h3>
+        <p>Year-over-year growth maintained</p>
+    </div>
+</div>
+
+<section class="testimonial-carousel">
+    <!-- Testimonial Items -->
+    <div class="carousel-item active">
+        <div class="testimonial-text" data-text="Their AI-powered sales funnel increased our qualified leads by 214% while reducing CAC by 37% - numbers we thought were impossible in our industry."></div>
+        <div class="client-info">Ahmed Samir • CMO @TechFront MENA</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="testimonial-text" data-text="We captured 22% market share in 3 new verticals within 90 days - something our internal team struggled with for 2 years."></div>
+        <div class="client-info">Leila Abbas • VP Expansion @AutoMobility Group</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="testimonial-text" data-text="Their customer support transformation package turned our cost center into a profit generator with 31% upsell conversion rates."></div>
+        <div class="client-info">Omar El-Sherif • COO @FinTech Arabia</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="testimonial-text" data-text="The multilingual campaign strategy delivered €4.8M in new pipeline from markets we'd never successfully penetrated before."></div>
+        <div class="client-info">Nourhan Tawfik • CEO @MediCare Europe</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Typing Effect Implementation
+    function typeText(element, text, speed = 50) {
+        let i = 0;
+        element.textContent = '';
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+
+    // Hero Section Typing
+    window.addEventListener('DOMContentLoaded', () => {
+        typeText(document.getElementById('typing-percent'), '87% of Our Clients Outperform');
+        setTimeout(() => {
+            typeText(document.getElementById('typing-text'), 'Their Market Within 90 Days', 30);
+        }, 1000);
+    });
+
+    // Testimonial Carousel
+    const items = document.querySelectorAll('.carousel-item');
+    let current = 0;
+    
+    function rotateTestimonials() {
+        items[current].classList.remove('active');
+        current = (current + 1) % items.length;
+        const activeItem = items[current];
+        activeItem.classList.add('active');
+        
+        // Trigger typing effect for new testimonial
+        const textElement = activeItem.querySelector('.testimonial-text');
+        typeText(textElement, textElement.dataset.text);
+        resetProgressBar();
+    }
+
+    function resetProgressBar() {
+        const bars = document.querySelectorAll('.progress-fill');
+        bars.forEach(bar => {
+            bar.style.animation = 'none';
+            void bar.offsetHeight; // Trigger reflow
+            bar.style.animation = 'progress 7s linear';
+        });
+    }
+
+    // Initialize first testimonial typing
+    typeText(document.querySelector('.carousel-item.active .testimonial-text'), 
+        document.querySelector('.carousel-item.active .testimonial-text').dataset.text);
+
+    setInterval(rotateTestimonials, 7000);
+
+    // Original Animations
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+        setTimeout(() => bar.style.width = bar.style.width, 500);
+    });
+
+    function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            obj.textContent = (progress * (end - start) + start).toFixed(end % 1 ? 1 : 0);
+            if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    }
+
+    document.querySelectorAll('.stat-number').forEach(counter => {
+        const target = parseFloat(counter.dataset.target);
+        animateValue(counter, 0, target, 2000);
+    });
+
+    let marketPulse = 87;
+    setInterval(() => {
+        marketPulse = Math.min(100, marketPulse + Math.random() * 0.2);
+        document.querySelector('.hero-section .progress-bar').style.width = `${marketPulse}%`;
+    }, 3000);
+</script>
+</body>
+</html>
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --dominant-blue: #002366;
+            --action-teal: #00C8B3;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+
+        .excellence-manifest {
+            padding: 4rem 1rem;
+            background: white;
+        }
+
+        .paradigm-shift {
+            font-size: 2rem;
+            text-align: center;
+            color: var(--dominant-blue);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .revolution-text {
+            background: linear-gradient(45deg, #00C8B3, #002366);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .excellence-matrix {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+        }
+
+        .service-pillar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 2rem;
+            margin: 1rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .service-pillar:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .pillar-illumination {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar-illumination i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: var(--dominant-blue);
+            z-index: 2;
+        }
+
+        .impact-wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 200, 179, 0.08);
+            border-radius: 50%;
+            filter: blur(30px);
+            animation: wave-pulse 4s infinite;
+        }
+
+        @keyframes wave-pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .pillar-content {
+            text-align: center;
+        }
+
+        .pillar-copy {
+            font-size: 1rem;
+            color: #444;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .pillar-copy em {
+            color: var(--action-teal);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .pillar-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .pillar-benefits li {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+            background: rgba(0, 35, 102, 0.03);
+            border-radius: 12px;
+        }
+
+        .pillar-benefits i {
+            color: var(--action-teal);
+            margin-right: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .cta-master {
+            background: var(--dominant-blue);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-master:hover {
+            background: var(--action-teal);
+        }
+
+        .action-pulse {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        .cta-master:hover .action-pulse {
+            right: 20px;
+        }
+
+        .pulse-dot {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .pulse-ring {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 50%;
+            top: -15px;
+            left: -15px;
+            animation: cta-pulse 1.5s infinite;
+        }
+
+        @keyframes cta-pulse {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        @media (min-width: 768px) {
+            .service-pillar {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .pillar-illumination {
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+
+            .pillar-content {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="excellence-manifest">
+    <div class="manifest-header">
+        <h2 class="paradigm-shift">
+            <span class="revolution-text">Redefining Business Evolution</span><br>
+            Where Data Meets Strategic Ambition
+        </h2>
+        <div class="proof-pulse">
+            <div class="proof-orb"></div>
+            <div class="proof-metrics">
+                <div class="metric">312%</div>
+                <div class="metric-label">Average Client Growth Acceleration</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="excellence-matrix">
+        <!-- Core Services -->
+        <article class="service-pillar" data-service="strategy">
+            <div class="pillar-illumination">
+                <i class="fas fa-chess-queen"></i>
+                <div class="impact-wave"></div>
+            </div>
+            <div class="pillar-content">
+                <h3>Strategic Growth Architecture</h3>
+                <p class="pillar-copy">
+                    We don't just plan - we engineer market dominance.<br>
+                    <em>Last 18 Months:</em> 97% strategy success rate across 14 industries
+                </p>
+                <div class="pillar-proof">
+                    <div class="proof-bar" style="--proof-width: 97%">
+                        <span>Strategic Success Rate</span>
+                    </div>
+                </div>
+                <ul class="pillar-benefits">
+                    <li><i class="fas fa-bullseye"></i> Market Leadership Roadmaps</li>
+                    <li><i class="fas fa-brain"></i> Competitive Intelligence Systems</li>
+                    <li><i class="fas fa-chart-network"></i> Ecosystem Optimization Models</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Data Excellence -->
+        <article class="service-pillar" data-service="data">
+            <div class="pillar-illumination">
+                <i class="fas fa-microchip"></i>
+                <div class="impact-wave"></div>
+            </div>
+            <div class="pillar-content">
+                <h3>Intelligence Amplification</h3>
+                <p class="pillar-copy">
+                    Transform raw data into conquest blueprints<br>
+                    <em>Typical Impact:</em> 68% faster decision cycles
+                </p>
+                <div class="pillar-proof">
+                    <div class="proof-bar" style="--proof-width: 89%">
+                        <span>Insight Accuracy</span>
+                    </div>
+                </div>
+                <ul class="pillar-benefits">
+                    <li><i class="fas fa-rocket"></i> Predictive Market Analytics</li>
+                    <li><i class="fas fa-cogs"></i> AI-Driven Opportunity Engines</li>
+                    <li><i class="fas fa-shield-alt"></i> Risk Mitigation Frameworks</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Transformation Engine -->
+        <article class="service-pillar" data-service="transformation">
+            <div class="pillar-illumination">
+                <i class="fas fa-atom"></i>
+                <div class="impact-wave"></div>
+            </div>
+            <div class="pillar-content">
+                <h3>Enterprise Evolution Systems</h3>
+                <p class="pillar-copy">
+                    Complete business metamorphosis<br>
+                    <em>Client Benchmark:</em> 4.3X ROI within operational year
+                </p>
+                <div class="pillar-proof">
+                    <div class="proof-bar" style="--proof-width: 94%">
+                        <span>Transformation Success</span>
+                    </div>
+                </div>
+                <ul class="pillar-benefits">
+                    <li><i class="fas fa-sync-alt"></i> End-to-End Process Revolution</li>
+                    <li><i class="fas fa-infinity"></i> Sustainable Innovation Pipelines</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Operational Velocity Maximization</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <div class="excellence-cta">
+        <div class="cta-rhetoric">
+            <p class="cta-preface">When You're Ready to Replace:</p>
+            <div class="pain-points">
+                <span>Random Growth Experiments</span>
+                <span>Reactive Market Posture</span>
+                <span>Static Operations</span>
+            </div>
+            <h3 class="cta-core">
+                With <span class="dominance-text">Predictable Market Command</span>
+            </h3>
+        </div>
+        <div class="cta-action">
+            <button class="cta-master">
+                Initiate Dominance Protocol
+                <div class="action-pulse">
+                    <div class="pulse-dot"></div>
+                    <div class="pulse-ring"></div>
+                </div>
+            </button>
+            <p class="assurance-copy">
+                <i class="fas fa-lock"></i> 100% Performance-Backed Engagement
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.service-pillar').forEach(pillar => {
+    pillar.addEventListener('click', () => {
+        pillar.style.backgroundColor = getRandomColor();
+    });
+});
+
+function getRandomColor() {
+    const colors = ['#f0f4f8', '#e0e7ff', '#d1fae5', '#ffe4e6', '#fef3c7'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+const cta = document.querySelector('.cta-master');
+cta.addEventListener('mousemove', (e) => {
+    const x = e.pageX - cta.offsetLeft;
+    const y = e.pageY - cta.offsetTop;
+    cta.style.setProperty('--x', x + 'px');
+    cta.style.setProperty('--y', y + 'px');
+});
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoundCalls | Strategic Alliances</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --crimson: #DC143C;
+            --navy: #002366;
+            --gold: #FFD700;
+            --ice: #F8F9FF;
+        }
+
+        .partnership-section {
+            background: radial-gradient(circle at center, var(--ice) 0%, white 100%);
+            padding: 6rem 2rem;
+        }
+
+        .badge {
+            background: linear-gradient(45deg, var(--navy) 0%, var(--crimson) 100%);
+            color: white;
+            padding: 0.8rem 2.5rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 2rem 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(0,35,102,0.1);
+        }
+
+        .partner-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 3px solid var(--navy);
+            border-radius: 20px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .partner-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,35,102,0.1);
+            border-color: var(--crimson);
+        }
+
+        .partner-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .partner-logo {
+            height: 80px;
+            width: auto;
+        }
+
+        .partner-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .leadership-note {
+            color: var(--crimson);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<section class="partnership-section">
+    <div style="text-align: center;">
+        <div class="badge">Strategic Alliance</div>
+        
+        <div class="partner-container">
+            <div class="partner-header">
+                <img src="naos-logo.png" class="partner-logo" alt="NAOS Solutions">
+                <div style="text-align: left;">
+                    <h2 style="color: var(--navy); margin: 0 0 0.5rem;">NAOS Solutions</h2>
+                    <a href="https://naos-solutions.com/" 
+                       style="color: var(--crimson); text-decoration: none; font-weight: 600;">
+                       naos-solutions.com ↗
+                    </a>
+                </div>
+            </div>
+
+            <p style="line-height: 1.8; color: #444;">
+                Our exclusive customer experience partners managing global support operations.<br>
+                <strong>Core Competencies:</strong><br>
+                ▸ Enterprise CRM implementation<br>
+                ▸ 24/7 multilingual customer support<br>
+                ▸ Live chat & communication systems<br>
+                ▸ Customer success team management
+            </p>
+
+            <div class="partner-meta">
+                Founded and led by Omar Abokshem<br>
+                <span class="leadership-note">
+                    ▲ 37% average improvement in customer satisfaction scores
+                </span>
+            </div>
+        </div>
+
+        <div style="max-width: 800px; margin: 3rem auto; padding: 2rem; background: rgba(220, 20, 60, 0.05); border-radius: 15px;">
+            <h3 style="color: var(--navy);">About Our Partnership</h3>
+            <p style="line-height: 1.8; color: #444;">
+                RoundCalls (founded and led by Omar Abokshem) and NAOS Solutions have established a unique synergy, 
+                combining business development expertise with world-class customer experience management. 
+                This alliance delivers end-to-end growth solutions for enterprise clients.
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Add interactive border animation
+    const partnerContainer = document.querySelector('.partner-container');
+    partnerContainer.addEventListener('mouseenter', () => {
+        partnerContainer.style.borderWidth = '4px';
+    });
+    partnerContainer.addEventListener('mouseleave', () => {
+        partnerContainer.style.borderWidth = '3px';
+    });
+</script>
+
+</body>
+</html>
