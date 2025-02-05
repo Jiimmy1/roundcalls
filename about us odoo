@@ -1,0 +1,1599 @@
+<t name="About Us" t-name="website.mn-nhn">
+        <t t-call="website.layout">
+            <div id="wrap" class="">
+                <div class="oe_structure">
+                    <section class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24 o_colored_level" data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="1" data-name="العنوان">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 0;"/>
+                        <div class="o_we_bg_filter bg-black-50"/>
+                        <div class="container">
+                            <h1>&amp;nbsp;About RoundCalls</h1><p>
+Reshaping the world of customer service with an exceptional touch of intelligence.</p><p>
+
+</p>
+                        </div>
+                    </section>
+                <section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><div dir="rtl">
+  <style>
+    .rtl-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .rtl-table th, .rtl-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    .rtl-table th {
+      background-color: #f8f9fa;
+      color: #002366;
+    }
+  </style>
+
+  <table class="rtl-table">
+    <tbody><tr>
+      <th>Criterion</th>
+      <th>Market Average</th> 
+      <th>RoundCalls</th>
+    </tr>
+    <tr>
+      <td>Response Time</td>
+      <td>15 seconds</td>
+      <td>3 seconds</td>
+    </tr>
+    <tr>
+      <td>Language Support</td>
+      <td>5 languages</td>
+      <td>15 languages</td>
+    </tr>
+  </tbody></table>
+</div></template>
+        <div class="s_embed_code_embedded o_not_editable container"><div dir="rtl">
+  <style>
+    .rtl-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .rtl-table th, .rtl-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    .rtl-table th {
+      background-color: #f8f9fa;
+      color: #002366;
+    }
+  </style>
+
+  <table class="rtl-table">
+    <tbody><tr>
+      <th>Criterion</th>
+      <th>Market Average</th> 
+      <th>RoundCalls</th>
+    </tr>
+    <tr>
+      <td>Response Time</td>
+      <td>15 seconds</td>
+      <td>3 seconds</td>
+    </tr>
+    <tr>
+      <td>Language Support</td>
+      <td>5 languages</td>
+      <td>15 languages</td>
+    </tr>
+  </tbody></table>
+</div></div>
+    </section></div>
+                <div class="oe_structure"><section class="s_features pt64 pb64 o_colored_level" data-snippet="s_features" data-name="الخصائص">
+        <div class="container">
+            <div class="col-lg-12">
+                <h3/><h3><strong>
+Everything you need to turn your communications into a strategic force
+
+</strong><br/></h3><p><strong>
+RoundCalls - Where innovation meets efficiency
+
+</strong><br/></p><p>
+
+</p></div></div></section><section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<title>RoundCalls - The Complete Solution</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* Same CSS styles as original */
+    :root {
+        --main-blue: #002366;
+        --accent-green: #00CC99;
+        --text-dark: #333;
+    }
+
+    body {
+        font-family: 'Tajawal', sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8fafc;
+    }
+
+    .section-title {
+        color: var(--main-blue);
+        border-right: 4px solid var(--accent-green);
+        padding-right: 15px;
+        margin: 40px 0;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .cert-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #e6f7ff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 10px 5px;
+    }
+
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+    }
+
+    .comparison-table td, .comparison-table th {
+        padding: 15px;
+        border: 1px solid #e9ecef;
+        text-align: center;
+    }
+
+    .comparison-table th {
+        background: var(--main-blue);
+        color: white;
+    }
+
+    .support-channel {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #e9ecef;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--accent-green);
+        width: 82%;
+    }
+</style>
+
+<h2 class="section-title">Reliability: Your Operations Never Stop</h2>
+<div class="feature-grid">
+    <div class="feature-card">
+        <h3>🛡 Ultra Infrastructure</h3>
+        <p>99.99% uptime supported by 12 global data centers</p>
+        <div class="progress-bar">
+            <div class="progress-fill"/>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h3>⚡ Lightning-fast Response</h3>
+        <p>3 seconds average connection time</p>
+        <p>Automatic backup every 5 minutes</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>📜 Compliance Certifications</h3>
+        <div class="cert-badge">✔️ ISO 27001</div>
+        <div class="cert-badge">✔️ PCI DSS</div>
+        <div class="cert-badge">✔️ SLA 200%</div>
+    </div>
+</div>
+
+<h2 class="section-title">Performance: Supercharged AI Engine</h2>
+<table class="comparison-table">
+    <tbody><tr>
+        <th>Criteria</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>🧠 Algorithms</td>
+        <td>Trained on 5M+ conversation hours</td>
+    </tr>
+    <tr>
+        <td>🌍 Language Support</td>
+        <td>15 languages with auto-routing</td>
+    </tr>
+</tbody></table>
+
+<h2 class="section-title">Scalability: Grow Without Limits</h2>
+<table class="comparison-table">
+    <tbody><tr>
+        <th>Client Size</th>
+        <th>Solution</th>
+        <th>Success Case</th>
+    </tr>
+    <tr>
+        <td>🏢 Startup (5 employees)</td>
+        <td>$299/month Cloud Package</td>
+        <td>TechSprints expanded to 3 countries</td>
+    </tr>
+    <tr>
+        <td>🏛 Enterprise (5,000+ employees)</td>
+        <td>Custom Hybrid System</td>
+        <td>Real Estate Union saved 55% costs</td>
+    </tr>
+</tbody></table>
+
+<h2 class="section-title">Comprehensive Support: 147 Experts at Your Service</h2>
+<div class="feature-grid">
+    <div class="feature-card">
+        <div class="support-channel">
+            <span>💬</span>
+            <div>
+                <h3>Live Chat</h3>
+                <p>23 seconds average wait time</p>
+            </div>
+        </div>
+        <div class="support-channel">
+            <span>📞</span>
+            <div>
+                <h3>Premium Hotline</h3>
+                <p>24/7 service for VIP clients</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h3>🛠 Proactive Solutions</h3>
+        <div class="progress-bar">
+            <div class="progress-fill"/>
+        </div>
+        <p>82% preemptive error detection</p>
+        <ul>
+            <li>Weekly performance reports</li>
+            <li>AI-powered recommendations</li>
+        </ul>
+    </div>
+</div></template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><title>RoundCalls - The Complete Solution</title><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet"/><style>
+    /* Same CSS styles as original */
+    :root {
+        --main-blue: #002366;
+        --accent-green: #00CC99;
+        --text-dark: #333;
+    }
+
+    body {
+        font-family: 'Tajawal', sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8fafc;
+    }
+
+    .section-title {
+        color: var(--main-blue);
+        border-right: 4px solid var(--accent-green);
+        padding-right: 15px;
+        margin: 40px 0;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .cert-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #e6f7ff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 10px 5px;
+    }
+
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+    }
+
+    .comparison-table td, .comparison-table th {
+        padding: 15px;
+        border: 1px solid #e9ecef;
+        text-align: center;
+    }
+
+    .comparison-table th {
+        background: var(--main-blue);
+        color: white;
+    }
+
+    .support-channel {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #e9ecef;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--accent-green);
+        width: 82%;
+    }
+</style><h2 class="section-title">Reliability: Your Operations Never Stop</h2><div class="feature-grid">
+    <div class="feature-card">
+        <h3>🛡 Ultra Infrastructure</h3>
+        <p>99.99% uptime supported by 12 global data centers</p>
+        <div class="progress-bar">
+            <div class="progress-fill"/>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h3>⚡ Lightning-fast Response</h3>
+        <p>3 seconds average connection time</p>
+        <p>Automatic backup every 5 minutes</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>📜 Compliance Certifications</h3>
+        <div class="cert-badge">✔️ ISO 27001</div>
+        <div class="cert-badge">✔️ PCI DSS</div>
+        <div class="cert-badge">✔️ SLA 200%</div>
+    </div>
+</div><h2 class="section-title">Performance: Supercharged AI Engine</h2><table class="comparison-table">
+    <tbody><tr>
+        <th>Criteria</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>🧠 Algorithms</td>
+        <td>Trained on 5M+ conversation hours</td>
+    </tr>
+    <tr>
+        <td>🌍 Language Support</td>
+        <td>15 languages with auto-routing</td>
+    </tr>
+</tbody></table><h2 class="section-title">Scalability: Grow Without Limits</h2><table class="comparison-table">
+    <tbody><tr>
+        <th>Client Size</th>
+        <th>Solution</th>
+        <th>Success Case</th>
+    </tr>
+    <tr>
+        <td>🏢 Startup (5 employees)</td>
+        <td>$299/month Cloud Package</td>
+        <td>TechSprints expanded to 3 countries</td>
+    </tr>
+    <tr>
+        <td>🏛 Enterprise (5,000+ employees)</td>
+        <td>Custom Hybrid System</td>
+        <td>Real Estate Union saved 55% costs</td>
+    </tr>
+</tbody></table><h2 class="section-title">Comprehensive Support: 147 Experts at Your Service</h2><div class="feature-grid">
+    <div class="feature-card">
+        <div class="support-channel">
+            <span>💬</span>
+            <div>
+                <h3>Live Chat</h3>
+                <p>23 seconds average wait time</p>
+            </div>
+        </div>
+        <div class="support-channel">
+            <span>📞</span>
+            <div>
+                <h3>Premium Hotline</h3>
+                <p>24/7 service for VIP clients</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <h3>🛠 Proactive Solutions</h3>
+        <div class="progress-bar">
+            <div class="progress-fill"/>
+        </div>
+        <p>82% preemptive error detection</p>
+        <ul>
+            <li>Weekly performance reports</li>
+            <li>AI-powered recommendations</li>
+        </ul>
+    </div>
+</div></div>
+    </section><section class="s_embed_code text-center pt64 pb64 o_colored_level" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<title>RoundCalls - Smart Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+        --main-blue: #002366;
+        --accent-green: #00CC99;
+        --text-dark: #333;
+    }
+
+    body {
+        font-family: 'Tajawal', sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8fafc;
+    }
+
+    /* Core Values Section */
+    .core-values {
+        text-align: center;
+        margin: 40px 0;
+        padding: 30px;
+        background: linear-gradient(45deg, #002366, #0052cc);
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .value-item {
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+        border: 2px solid white;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .value-item:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,0.1);
+    }
+
+    /* Smart Questions Section */
+    .smart-questions {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 40px 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .question-item {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        font-size: 18px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    /* Tabs Section */
+    .tabs-container {
+        margin: 40px 0;
+        border: 2px solid #e9ecef;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .tabs-nav {
+        display: flex;
+        background: #f8f9fa;
+        padding: 10px;
+    }
+
+    .tab-btn {
+        background: none;
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .tab-btn.active {
+        background: var(--main-blue);
+        color: white;
+        border-radius: 8px;
+    }
+
+    .tab-content {
+        padding: 25px;
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    /* Flow Steps Section */
+    .flow-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+    }
+
+    .flow-step {
+        text-align: center;
+        padding: 20px;
+        background: var(--accent-green);
+        color: white;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .flow-step::after {
+        content: "↓";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: var(--main-blue);
+    }
+
+    /* Heatmap Section */
+    .heatmap-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 40px 0;
+    }
+
+    .heat-item {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+        transition: 0.3s;
+    }
+
+    /* Heatmap Gradient */
+    .heat-item:nth-child(1) { background: #e6f7ff; color: #002366; }
+    .heat-item:nth-child(2) { background: #b3e6ff; color: #002366; }
+    .heat-item:nth-child(3) { background: #80d4ff; color: #002366; }
+    .heat-item:nth-child(4) { background: #4dc3ff; color: #002366; }
+    .heat-item:nth-child(5) { background: #1ab2ff; color: white; }
+
+</style>
+
+<section class="core-values">
+    <div class="value-item">
+        <h3>Business</h3>
+        <p>Smart communication solutions to support your business growth</p>
+    </div>
+    <div class="value-item">
+        <h3>Security</h3>
+        <p>Secure systems to ensure the stability of your operations</p>
+    </div>
+    <div class="value-item">
+        <h3>Vision</h3>
+        <p>Achieving your ambitions with a technological vision</p>
+    </div>
+</section>
+
+<section class="smart-questions">
+    <h2 style="color: var(--main-blue); margin-bottom: 25px;">Questions that make you think:</h2>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">Are you paying 35% more for limited language support?</p>
+    </div>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">Can you afford service outages during critical seasons?</p>
+    </div>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">How many sales opportunities do you lose daily due to slow service?</p>
+    </div>
+</section>
+
+<div class="tabs-container">
+    <div class="tabs-nav">
+        <button class="tab-btn active" onclick="openTab(event, 'startups')">Startups</button>
+        <button class="tab-btn" onclick="openTab(event, 'enterprise')">Large Enterprises</button>
+    </div>
+
+    <div id="startups" class="tab-content active">
+        <h3>Customized Solutions for Startups</h3>
+        <ul>
+            <li>✔️ Reduce operational costs by up to 40%</li>
+            <li>✔️ Scalable systems as your business grows</li>
+            <li>✔️ 24/7 dedicated support</li>
+        </ul>
+    </div>
+
+    <div id="enterprise" class="tab-content">
+        <h3>Solutions for Large Enterprises</h3>
+        <ul>
+            <li>✔️ Manage teams across multiple countries</li>
+            <li>✔️ Integration with advanced ERP systems</li>
+            <li>✔️ Executive performance reports</li>
+        </ul>
+    </div>
+</div>
+
+<div class="flow-steps">
+    <div class="flow-step">Quick Registration</div>
+    <div class="flow-step">Smart Customization</div>
+    <div class="flow-step">Hands-on Training</div>
+    <div class="flow-step">Go Live</div>
+</div>
+
+<div class="heatmap-container">
+    <div class="heat-item">20%</div>
+    <div class="heat-item">35%</div>
+    <div class="heat-item">50%</div>
+    <div class="heat-item">65%</div>
+    <div class="heat-item">80%</div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        // Hide all content
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(content =&gt; content.classList.remove('active'));
+        
+        // Deactivate all buttons
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        tabButtons.forEach(btn =&gt; btn.classList.remove('active'));
+        
+        // Show the selected content
+        document.getElementById(tabName).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+</script>
+</template>
+        <div class="s_embed_code_embedded container o_not_editable"><meta charset="UTF-8"/><title>RoundCalls - Smart Solutions</title><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap" rel="stylesheet"/><style>
+    :root {
+        --main-blue: #002366;
+        --accent-green: #00CC99;
+        --text-dark: #333;
+    }
+
+    body {
+        font-family: 'Tajawal', sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8fafc;
+    }
+
+    /* Core Values Section */
+    .core-values {
+        text-align: center;
+        margin: 40px 0;
+        padding: 30px;
+        background: linear-gradient(45deg, #002366, #0052cc);
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .value-item {
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+        border: 2px solid white;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .value-item:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,0.1);
+    }
+
+    /* Smart Questions Section */
+    .smart-questions {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 40px 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .question-item {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        font-size: 18px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    /* Tabs Section */
+    .tabs-container {
+        margin: 40px 0;
+        border: 2px solid #e9ecef;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .tabs-nav {
+        display: flex;
+        background: #f8f9fa;
+        padding: 10px;
+    }
+
+    .tab-btn {
+        background: none;
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .tab-btn.active {
+        background: var(--main-blue);
+        color: white;
+        border-radius: 8px;
+    }
+
+    .tab-content {
+        padding: 25px;
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    /* Flow Steps Section */
+    .flow-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+    }
+
+    .flow-step {
+        text-align: center;
+        padding: 20px;
+        background: var(--accent-green);
+        color: white;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    .flow-step::after {
+        content: "↓";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: var(--main-blue);
+    }
+
+    /* Heatmap Section */
+    .heatmap-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 40px 0;
+    }
+
+    .heat-item {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: bold;
+        color: white;
+        transition: 0.3s;
+    }
+
+    /* Heatmap Gradient */
+    .heat-item:nth-child(1) { background: #e6f7ff; color: #002366; }
+    .heat-item:nth-child(2) { background: #b3e6ff; color: #002366; }
+    .heat-item:nth-child(3) { background: #80d4ff; color: #002366; }
+    .heat-item:nth-child(4) { background: #4dc3ff; color: #002366; }
+    .heat-item:nth-child(5) { background: #1ab2ff; color: white; }
+
+</style><section class="core-values">
+    <div class="value-item">
+        <h3>Business</h3>
+        <p>Smart communication solutions to support your business growth</p>
+    </div>
+    <div class="value-item">
+        <h3>Security</h3>
+        <p>Secure systems to ensure the stability of your operations</p>
+    </div>
+    <div class="value-item">
+        <h3>Vision</h3>
+        <p>Achieving your ambitions with a technological vision</p>
+    </div>
+</section><section class="smart-questions">
+    <h2 style="color: var(--main-blue); margin-bottom: 25px;">Questions that make you think:</h2>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">Are you paying 35% more for limited language support?</p>
+    </div>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">Can you afford service outages during critical seasons?</p>
+    </div>
+    <div class="question-item">
+        <span>✔️</span>
+        <p style="margin: 0 15px;">How many sales opportunities do you lose daily due to slow service?</p>
+    </div>
+</section><div class="tabs-container">
+    <div class="tabs-nav">
+        <button class="tab-btn active" onclick="openTab(event, 'startups')">Startups</button>
+        <button class="tab-btn" onclick="openTab(event, 'enterprise')">Large Enterprises</button>
+    </div>
+
+    <div id="startups" class="tab-content active">
+        <h3>Customized Solutions for Startups</h3>
+        <ul>
+            <li>✔️ Reduce operational costs by up to 40%</li>
+            <li>✔️ Scalable systems as your business grows</li>
+            <li>✔️ 24/7 dedicated support</li>
+        </ul>
+    </div>
+
+    <div id="enterprise" class="tab-content">
+        <h3>Solutions for Large Enterprises</h3>
+        <ul>
+            <li>✔️ Manage teams across multiple countries</li>
+            <li>✔️ Integration with advanced ERP systems</li>
+            <li>✔️ Executive performance reports</li>
+        </ul>
+    </div>
+</div><div class="flow-steps">
+    <div class="flow-step">Quick Registration</div>
+    <div class="flow-step">Smart Customization</div>
+    <div class="flow-step">Hands-on Training</div>
+    <div class="flow-step">Go Live</div>
+</div><div class="heatmap-container">
+    <div class="heat-item">20%</div>
+    <div class="heat-item">35%</div>
+    <div class="heat-item">50%</div>
+    <div class="heat-item">65%</div>
+    <div class="heat-item">80%</div>
+</div><script>
+    function openTab(evt, tabName) {
+        // Hide all content
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(content =&gt; content.classList.remove('active'));
+        
+        // Deactivate all buttons
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        tabButtons.forEach(btn =&gt; btn.classList.remove('active'));
+        
+        // Show the selected content
+        document.getElementById(tabName).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+</script></div>
+    </section><section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code">
+        <template class="s_embed_code_saved"><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RoundCalls - Smart Communication Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background: #f8f9fa;
+        color: #2c3e50;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header::after {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: -10%;
+        width: 120%;
+        height: 100px;
+        background: white;
+        transform: rotate(-3deg);
+    }
+
+    .pricing-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 80px 0;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(52, 152, 219, 0.1));
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .card:hover::before {
+        transform: rotate(45deg) translateX(100%);
+    }
+
+    .badge {
+        background: linear-gradient(45deg, #e74c3c, #ff6b6b);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-size: 0.9em;
+        margin: 15px 0;
+        display: inline-block;
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    }
+
+    .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+
+    .features-list li {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .features-list li:hover {
+        transform: translateX(10px);
+        background: #f8f9fa;
+    }
+
+    .features-list li i {
+        color: #3498db;
+        margin-left: 10px;
+        font-size: 1.2em;
+    }
+
+    .timeline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .step {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .step:hover {
+        border-color: #3498db;
+        box-shadow: 0 10px 30px rgba(52, 152, 219, 0.1);
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #3498db, #2c3e50);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .cta-section {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .button {
+        background: linear-gradient(45deg, #3498db, #2c3e50);
+        color: white;
+        padding: 18px 45px;
+        border-radius: 35px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        margin: 20px 0;
+        transition: all 0.4s;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+    }
+
+    .button:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+    }
+
+    .button i {
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+
+    .button:hover i {
+        transform: translateX(5px);
+    }
+
+    .success-story {
+        background: rgba(52, 152, 219, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    .success-story::before {
+        content: "✨";
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+
+    @media (max-width: 768px) {
+        .timeline {
+            grid-template-columns: 1fr;
+        }
+
+        .header {
+            padding: 60px 20px;
+        }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card, .step, .cta-section {
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+</style>
+
+<div class="header">
+    <div class="container">
+        <h1 style="font-size: 2.5em; margin-bottom: 20px;">Smart Communication Packages Designed Based on the Success of 10,000+ Clients</h1>
+        <p style="font-size: 1.2em; opacity: 0.9;">Choose the one that fits your ambitions</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pricing-cards">
+        <div class="card">
+            <h2 style="color: #3498db;"><i class="fa fa-rocket"/> For Startups</h2>
+            <div class="badge">$199/month</div>
+            <ul class="features-list">
+                <li><i class="fa fa-check-circle"/>1,000 Monthly Call Minutes</li>
+                <li><i class="fa fa-check-circle"/>3 Hours of Intensive Training</li>
+                <li><i class="fa fa-check-circle"/>Free NPS Analysis Every 3 Months</li>
+            </ul>
+            <a href="https://roundcalls.odoo.com/pricing" target="_blank" class="button">Get Started Now <i class="fa fa-arrow-left"/></a>
+            <div class="success-story">
+                <h4>Client Success: +180% Sales in 4 Months</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #2c3e50;"><i class="fa fa-globe"/> For Large Enterprises</h2>
+            <div class="badge">Call for Details</div>
+            <ul class="features-list">
+                <li><i class="fa fa-check-circle"/>Integration with SAP/Oracle</li>
+                <li><i class="fa fa-check-circle"/>Custom IVR System</li>
+                <li><i class="fa fa-check-circle"/>Detailed Management Reports</li>
+            </ul>
+            <a href="https://roundcalls.odoo.com/contactus" target="_blank" class="button">Contact Us <i class="fa fa-phone"/></a>
+            <div class="success-story">
+                <h4>Client Success: 55% Cost Savings</h4>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin: 60px 0 40px; font-size: 2em;">🛠 Setup in 3 Simple Steps</h2>
+    <div class="timeline">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Quick Registration</h3>
+            <p>Only 20 minutes to start the process</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Smart Configuration</h3>
+            <p>System setup tailored to your needs</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Operational Launch</h3>
+            <p>Live training with experts</p>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section">
+    <div class="container">
+        <h2 style="font-size: 2em; margin-bottom: 30px;">Exclusive Discounts for Registrants Within 24 Hours!</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 40px;">
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>30% Discount</h3>
+                <p>For the first 3 months</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>Free Consultation</h3>
+                <p>Worth $500</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>Refund Guarantee</h3>
+                <p>14 Days</p>
+            </div>
+        </div>
+        <a href="https://roundcalls.odoo.com/pricing" target="_blank" class="button">Get the Offer Now <i class="fa fa-gift"/></a>
+    </div>
+</div>
+
+<script>
+    // Scroll reveal effects
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    document.querySelectorAll('.card, .step, .cta-section').forEach(el =&gt; {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        observer.observe(el);
+    });
+
+    // Button hover interactivity
+    document.querySelectorAll('.button').forEach(button =&gt; {
+        button.addEventListener('mouseover', () =&gt; {
+            button.style.background = 'linear-gradient(45deg, #2c3e50, #3498db)';
+        });
+        
+        button.addEventListener('mouseout', () =&gt; {
+            button.style.background = 'linear-gradient(45deg, #3498db, #2c3e50)';
+        });
+    });
+</script>
+
+<script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/>
+</template>
+        <div class="s_embed_code_embedded o_not_editable container"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>RoundCalls - Smart Communication Solutions</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/><style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background: #f8f9fa;
+        color: #2c3e50;
+        line-height: 1.8;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header::after {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: -10%;
+        width: 120%;
+        height: 100px;
+        background: white;
+        transform: rotate(-3deg);
+    }
+
+    .pricing-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 80px 0;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(52, 152, 219, 0.1));
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .card:hover::before {
+        transform: rotate(45deg) translateX(100%);
+    }
+
+    .badge {
+        background: linear-gradient(45deg, #e74c3c, #ff6b6b);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-size: 0.9em;
+        margin: 15px 0;
+        display: inline-block;
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    }
+
+    .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+
+    .features-list li {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .features-list li:hover {
+        transform: translateX(10px);
+        background: #f8f9fa;
+    }
+
+    .features-list li i {
+        color: #3498db;
+        margin-left: 10px;
+        font-size: 1.2em;
+    }
+
+    .timeline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 60px 0;
+    }
+
+    .step {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .step:hover {
+        border-color: #3498db;
+        box-shadow: 0 10px 30px rgba(52, 152, 219, 0.1);
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #3498db, #2c3e50);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .cta-section {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+        margin-top: 80px;
+        position: relative;
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    }
+
+    .button {
+        background: linear-gradient(45deg, #3498db, #2c3e50);
+        color: white;
+        padding: 18px 45px;
+        border-radius: 35px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        margin: 20px 0;
+        transition: all 0.4s;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+    }
+
+    .button:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+    }
+
+    .button i {
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+
+    .button:hover i {
+        transform: translateX(5px);
+    }
+
+    .success-story {
+        background: rgba(52, 152, 219, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    .success-story::before {
+        content: "✨";
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+
+    @media (max-width: 768px) {
+        .timeline {
+            grid-template-columns: 1fr;
+        }
+
+        .header {
+            padding: 60px 20px;
+        }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card, .step, .cta-section {
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+</style><div class="header">
+    <div class="container">
+        <h1 style="font-size: 2.5em; margin-bottom: 20px;">Smart Communication Packages Designed Based on the Success of 10,000+ Clients</h1>
+        <p style="font-size: 1.2em; opacity: 0.9;">Choose the one that fits your ambitions</p>
+    </div>
+</div><div class="container">
+    <div class="pricing-cards">
+        <div class="card">
+            <h2 style="color: #3498db;"><i class="fa fa-rocket"/> For Startups</h2>
+            <div class="badge">$199/month</div>
+            <ul class="features-list">
+                <li><i class="fa fa-check-circle"/>1,000 Monthly Call Minutes</li>
+                <li><i class="fa fa-check-circle"/>3 Hours of Intensive Training</li>
+                <li><i class="fa fa-check-circle"/>Free NPS Analysis Every 3 Months</li>
+            </ul>
+            <a href="https://roundcalls.odoo.com/pricing" target="_blank" class="button">Get Started Now <i class="fa fa-arrow-left"/></a>
+            <div class="success-story">
+                <h4>Client Success: +180% Sales in 4 Months</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #2c3e50;"><i class="fa fa-globe"/> For Large Enterprises</h2>
+            <div class="badge">Call for Details</div>
+            <ul class="features-list">
+                <li><i class="fa fa-check-circle"/>Integration with SAP/Oracle</li>
+                <li><i class="fa fa-check-circle"/>Custom IVR System</li>
+                <li><i class="fa fa-check-circle"/>Detailed Management Reports</li>
+            </ul>
+            <a href="https://roundcalls.odoo.com/contactus" target="_blank" class="button">Contact Us <i class="fa fa-phone"/></a>
+            <div class="success-story">
+                <h4>Client Success: 55% Cost Savings</h4>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin: 60px 0 40px; font-size: 2em;">🛠 Setup in 3 Simple Steps</h2>
+    <div class="timeline">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Quick Registration</h3>
+            <p>Only 20 minutes to start the process</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Smart Configuration</h3>
+            <p>System setup tailored to your needs</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Operational Launch</h3>
+            <p>Live training with experts</p>
+        </div>
+    </div>
+</div><div class="cta-section">
+    <div class="container">
+        <h2 style="font-size: 2em; margin-bottom: 30px;">Exclusive Discounts for Registrants Within 24 Hours!</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 40px;">
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>30% Discount</h3>
+                <p>For the first 3 months</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>Free Consultation</h3>
+                <p>Worth $500</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                <h3>Refund Guarantee</h3>
+                <p>14 Days</p>
+            </div>
+        </div>
+        <a href="https://roundcalls.odoo.com/pricing" target="_blank" class="button">Get the Offer Now <i class="fa fa-gift"/></a>
+    </div>
+</div><script>
+    // Scroll reveal effects
+    const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    document.querySelectorAll('.card, .step, .cta-section').forEach(el =&gt; {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        observer.observe(el);
+    });
+
+    // Button hover interactivity
+    document.querySelectorAll('.button').forEach(button =&gt; {
+        button.addEventListener('mouseover', () =&gt; {
+            button.style.background = 'linear-gradient(45deg, #2c3e50, #3498db)';
+        });
+        
+        button.addEventListener('mouseout', () =&gt; {
+            button.style.background = 'linear-gradient(45deg, #3498db, #2c3e50)';
+        });
+    });
+</script><script chatbot_id="6794c01d0e3cbc9bd8de8390" data-type="bar" src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"/></div>
+    </section></div>
+            </div>
+        </t>
+    </t>
